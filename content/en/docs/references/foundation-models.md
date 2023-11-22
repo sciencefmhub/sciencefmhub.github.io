@@ -11,4 +11,5 @@ This page contains pointers to useful refernces.
 
 ## Refernces
 
-TBD
+* [References about Science Foundation models](https://docs.google.com/document/d/1Wqw6MiAT0jJCOYes_cUiH5cxLPt05A0PZiH7NvAwRFI/edit?usp=sharing) (external to site)
+

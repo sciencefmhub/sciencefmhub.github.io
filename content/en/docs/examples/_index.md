@@ -1,7 +1,7 @@
 ---
 title: Examples
 weight: 3
-date: 2017-01-05
+date: 2023-11-23
 description: A number of example projects
 ---
 
