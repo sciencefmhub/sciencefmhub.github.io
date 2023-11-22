@@ -1,10 +1,8 @@
 ---
 title: "Windows"
 linkTitle: "Windows"
+icon: "fa-solid fa-greater-than"
 weight: 20
-menu:
-  main:
-    weight: 20
 ---
 
 

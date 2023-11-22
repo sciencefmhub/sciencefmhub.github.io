@@ -1,10 +1,8 @@
 ---
 title: "File Transfer"
 linkTitle: "File Transfer"
+icon: "fa-solid fa-greater-than"
 weight: 20
-menu:
-  main:
-    weight: 20
 ---
 
 
