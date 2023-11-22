@@ -1,0 +1,51 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Science FM Hub – docker</title>
+    <link>/tags/docker/</link>
+    <description>Recent content in docker on Science FM Hub</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Docker</title>
+      <link>/docs/tutorials/docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/tutorials/docker/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Docker drivers images from NVIDIA&lt;/p&gt;
+&lt;h2 id=&#34;install-gpu-drivers-in-a-docker-image&#34;&gt;Install GPU drivers in a docker image&lt;/h2&gt;
+&lt;p&gt;NVIDIA GPU drivers can be installed into docker images.
+As the software may frequently cange, we recommend to look at
+the &lt;a href=&#34;https://nvidia.github.io/nvidia-container-runtime&#34;&gt;Nvidia documentation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;An example to add to a debian based Dockerfile to install the GPU drivers (this may be incomplete and you need to check the instructions):&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;RUN curl -s -L https://nvidia.github.io/nvidia-container-runtime/gpgkey | \
+    apt-key add - \ &amp;amp;&amp;amp;
+    distribution=$(. /etc/os-release;echo $ID$VERSION_ID) \ &amp;amp;&amp;amp;
+    curl -s -L https://nvidia.github.io/nvidia-container-runtime/$distribution/nvidia-container-runtime.list | 
+RUN apt-get update \ &amp;amp;&amp;amp;
+apt-get install -y nvidia-container-runtime
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#debian-installation&#34;&gt;https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#debian-installation&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html&#34;&gt;https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,230 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Science FM Hub – File Transfer</title>
+    <link>/docs/tutorials/file-transfer/</link>
+    <description>Recent content in File Transfer on Science FM Hub</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="/docs/tutorials/file-transfer/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Rclone on Rivanna</title>
+      <link>/docs/tutorials/file-transfer/rclone/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/tutorials/file-transfer/rclone/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;using-the-rclone-module-on-rivanna&#34;&gt;Using the Rclone Module on Rivanna&lt;/h1&gt;
+&lt;p&gt;Rclone is a useful tool to upload and download from cloud
+services such as Google Drive by using the commandline.
+However, a web browser is required for initial setup,
+which can be done from the computer that logs into Rivanna.&lt;/p&gt;
+&lt;h2 id=&#34;setup-rclone-on-rivanna&#34;&gt;Setup Rclone on Rivanna&lt;/h2&gt;
+&lt;p&gt;First, load the newer version of module; otherwise, Rivanna
+loads an incompatible, older version by default. Then, initialize
+a new rclone configuration and enter the following inputs:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ module load rclone/1.61.1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ rclone config
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;n/s/q&amp;gt; n
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;name&amp;gt; gdrive
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Storage&amp;gt; drive
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;A client ID is required to create a provision that interfaces
+with Google Drive. Follow the instructions at
+&lt;a href=&#34;https://rclone.org/drive/#making-your-own-client-id&#34;&gt;https://rclone.org/drive/#making-your-own-client-id&lt;/a&gt; to create
+a client ID and then input the values into Rivanna.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;client_id&amp;gt; myCoolID..
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;client_secret&amp;gt; verySecretClientSecret..
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;scope&amp;gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# read only&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;service_account_file&amp;gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# just press enter&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Edit advanced config?
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;y&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt; Yes
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;n&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt; No &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;default&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;y/n&amp;gt; n
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Use web browser to automatically authenticate rclone with remote?
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;y/n&amp;gt; n
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;install-rclone-on-client-computer&#34;&gt;Install Rclone on Client Computer&lt;/h2&gt;
+&lt;p&gt;If the computer used to log on to Rivanna is running Windows,
+and the computer has Chocolatey, then download Rclone using an
+administrative Git Bash instance with&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ choco install rclone -y
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Otherwise, for Linux and macOS, use&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ sudo -v &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt; curl https://rclone.org/install.sh &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; sudo bash
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then, after opening a new instance of the terminal, paste the command given
+into Git Bash and follow the instructions.&lt;/p&gt;
+&lt;h2 id=&#34;rclone-authentication&#34;&gt;Rclone Authentication&lt;/h2&gt;
+&lt;p&gt;In the web browser, click Advanced when google says that they
+have not verified this app; it is safe and expected. Then click
+Go to rclone, then Continue.&lt;/p&gt;
+&lt;p&gt;When Rclone gives the config token, ensure that all new line
+characters are removed. This can be done by pasting the code
+into an application such as Notepad and manually ensuring that
+all characters are on the same line. Otherwise, the code will
+be split across new prompts, breaking the setup.&lt;/p&gt;
+&lt;p&gt;This is bad:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sjgnkajdfnkj
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;fdnskjafnkad
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;asdfnasjkffd
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This is good:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sjgnkajdfnkjfdnskjafnkadasdfnasjkffd
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Paste the fixed token into Rivanna.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;config_token&amp;gt; myCoolCodeThatHasNoNewLineCharacters
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Configure this as a Shared Drive &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;Team Drive&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;?
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;y&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt; Yes
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;n&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt; No &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;default&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;y/n&amp;gt; n
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Keep this &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;gdrive&amp;#34;&lt;/span&gt; remote?
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;y&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt; Yes this is OK &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;default&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;y/e/d&amp;gt; y
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;q&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt; Quit config
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;e/n/d/r/c/s/q&amp;gt; q
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;An example command to use Rclone is as follows.
+The flag &lt;code&gt;--drive-shared-with-me&lt;/code&gt; restricts the scope to
+only shared files.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ rclone copy --drive-shared-with-me gdrive:Colab&lt;span style=&#34;color:#4e9a06&#34;&gt;\ &lt;/span&gt;Datasets/EarthquakeDec2020  /scratch/&lt;span style=&#34;color:#000&#34;&gt;$USER&lt;/span&gt;/EarthquakeDec2020 -P
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Globus</title>
+      <link>/docs/tutorials/file-transfer/globus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/tutorials/file-transfer/globus/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;getting-the-cosmoflow-data-via-globus-commandline&#34;&gt;Getting the Cosmoflow data via globus commandline&lt;/h1&gt;
+&lt;h2 id=&#34;data-directory&#34;&gt;Data Directory&lt;/h2&gt;
+&lt;p&gt;We will showcase how to transfer data via globus
+commandline tools.&lt;/p&gt;
+&lt;p&gt;In our example we will use the data directory as&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;DATA&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;/project/bii_dsc_community/&lt;span style=&#34;color:#000&#34;&gt;$USER&lt;/span&gt;/cosmoflow/data
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;globus-set-up-on-rivanna&#34;&gt;Globus Set Up on Rivanna&lt;/h2&gt;
+&lt;p&gt;Rivanna allows to load the Globus file transfer command line tools via
+the modules command with the following commands. However, prior to
+executing globus login, please visit &lt;a href=&#34;https://www.globus.org/&#34;&gt;https://www.globus.org/&lt;/a&gt; and log
+in using your UVA credentials.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;module load globus_cli
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;globus login
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The &lt;code&gt;globus login&lt;/code&gt; method will output a unique link per user that you
+should paste into a web browser and sign in with using your UVA
+credentials. Afterwords, the website will present you with a unique
+sign-in key that you will need to paste back into the command line to
+verify your login.&lt;/p&gt;
+&lt;p&gt;After executing &lt;code&gt;globus login&lt;/code&gt; your console should look like the
+following block.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;NOTE: this is a unique link generated for the example login,
+each user will have a different link.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;-bash-4.2$globus login
+Please authenticate with Globus here:
+------------------------------------
+https://auth.globus.org/v2/oauth2/authorize?client_id=affbecb5-5f93-404e-b342-957af296dea0&amp;amp;redirect_uri=https%3A%2F%2Fauth.globus.org%2Fv2%2Fweb%2Fauth-code&amp;amp;scope=openid+profile+email+urn%3Aglobus%3Aauth%3Ascope%3Aauth.globus.org%3Aview_identity_set+urn%3Aglobus%3Aauth%3Ascope%3Atransfer.api.globus.org%3Aall&amp;amp;state=_default&amp;amp;response_type=code&amp;amp;access_type=offline&amp;amp;prompt=login
+------------------------------------
+
+Enter the resulting Authorization Code here:
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Follow the url and input the authorization code to login successfully.&lt;/p&gt;
+&lt;h2 id=&#34;source-endpoint-search&#34;&gt;Source Endpoint Search&lt;/h2&gt;
+&lt;p&gt;First, verify that you were able to sign in properly, and verify your
+identity and then search for the source endpoint of the data you want
+to transfer. In this example, our endpoint is named &lt;code&gt;CosmoFlow benchmark data cosmoUniverse_2019_02_4parE&lt;/code&gt;. Please note that the file
+to be downloaded is 1.7 TB large. Make sure that the system on which
+you download it has enough space. The following commands
+will verify your sign in identity and then search for an endpoint
+within the single quotation marks.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;globus get-identities -v &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;youremail@gmailprobably.com&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;globus endpoint search &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;CosmoFlow benchmark data cosmoUniverse_2019_02_4parE&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Each globus endpoint has a unique endpoint ID. In this case our source endpoint ID is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;d0b1b73a-efd3-11e9-993f-0a8c187e8c12&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Set up a variable &lt;code&gt;ENDPOINT&lt;/code&gt; so you can use the endpoint more easily without retyping it.
+Also set a variable &lt;code&gt;SRC_DIR&lt;/code&gt; to indicate the directory with the files to be transferred.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;SRC_ENDPOINT&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;d0b1b73a-efd3-11e9-993f-0a8c187e8c12
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;SRC_DIR&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;/~/
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can look at the files in the globus endpoint using &lt;code&gt;globus ls&lt;/code&gt; to
+verify that you are looking at the right endpoint.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;globus ls &lt;span style=&#34;color:#000&#34;&gt;$SRC_ENDPOINT&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;destination-endpoint-set-up&#34;&gt;Destination Endpoint Set Up&lt;/h2&gt;
+&lt;p&gt;Rivanna HPC has set a special endpoint for data transfers into the
+&lt;code&gt;/project&lt;/code&gt;, &lt;code&gt;/home&lt;/code&gt;, or &lt;code&gt;/scratch&lt;/code&gt; directories. The name of this
+destination endpoint will be &lt;code&gt;UVA Standard Security Storage&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Repeat the above steps with this endpoint and set up the variables
+including a &lt;code&gt;path&lt;/code&gt; variable with the desired path to write to.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;globus endpoint search &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;UVA Standard Security Storage&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;DEST_ENDPOINT&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;e6b338df-213b-4d31-b02c-1bc2c628ca07
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;DEST_DIR&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;/dtn/landings/users/u/uj/&lt;span style=&#34;color:#000&#34;&gt;$USER&lt;/span&gt;/project/bii_dsc_community/uja2wd/cosmoflow/
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;NOTE: We cannot set the path to start at the root level in rivanna
+and instead need to follow a few steps to find the specific path of
+where to write to.&lt;/p&gt;
+&lt;p&gt;To begin, our path must start with &lt;code&gt;/dtn/landings/users/&lt;/code&gt;
+and is then appended on a unique sequence depending on the users computing ID.
+The rest of the path is dependent on characters of the users computing ID.
+As an example, if your computing ID is abc5xy, the next three arguments are
+&lt;code&gt;/a/ab/abc5xy&lt;/code&gt; (first char, first two chars, computing id), at this point the
+user is essentially in the root level of rivanna and can access
+&lt;code&gt;/home&lt;/code&gt;, &lt;code&gt;/project&lt;/code&gt;, or &lt;code&gt;/scratch&lt;/code&gt; how they normally would.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note: If you want to use the web format of Globus to find the path isntead.
+Follow the below steps to find the desired value of your path var.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;First sign into the web format of globus&lt;/li&gt;
+&lt;li&gt;Locate &lt;code&gt;file manager&lt;/code&gt; on the left side of the screen&lt;/li&gt;
+&lt;li&gt;In the &lt;code&gt;collections&lt;/code&gt; box at the top of the screen begin to search
+for &lt;code&gt;UVA Standard Security Storage&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Select our destination endpoint&lt;/li&gt;
+&lt;li&gt;Use the GUI tool to select exactly where you wish to write to&lt;/li&gt;
+&lt;li&gt;Copy the path from the box immedietally below &lt;code&gt;collections&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Write this value to the DEST_DIR variable created above (I have
+included my path to where I wish to write to)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;initiate-the-transfer&#34;&gt;Initiate the Transfer&lt;/h2&gt;
+&lt;p&gt;Finally, execute the transfer&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;globus transfer &lt;span style=&#34;color:#000&#34;&gt;$SRC_ENDPOINT&lt;/span&gt;:&lt;span style=&#34;color:#000&#34;&gt;$SRC_DIR&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$DEST_ENDPOINT&lt;/span&gt;:&lt;span style=&#34;color:#000&#34;&gt;$DEST_DIR&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;NOTE: In case your first transfer may have an issue because you need to give
+globus permission to initiate transfers via the CLI instead of via the
+web tool. I was given the unique command as follows by my terminal:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;-bash-4.2&lt;span style=&#34;color:#000&#34;&gt;$globus&lt;/span&gt; transfer &lt;span style=&#34;color:#000&#34;&gt;$SRC_ENDPOINT&lt;/span&gt;:&lt;span style=&#34;color:#000&#34;&gt;$SRC_DIR&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$DEST_ENDPOINT&lt;/span&gt;:&lt;span style=&#34;color:#000&#34;&gt;$DEST_DIR&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;The collection you are trying to access data on requires you to grant
+consent for the Globus CLI to access it.  message: Missing required
+data_access consent
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Please run&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;  globus session consent &amp;#39;urn:globus:auth:scope:transfer.api.globus.org:all[*https://auth.globus.org/scopes/e6b338df-213b-4d31-b02c-1bc2c628ca07/data_access]&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;to login with the required scopes&lt;/p&gt;
+&lt;p&gt;After initiating this command, a similar sign in a verification will
+be conducted compared to the &lt;code&gt;globus login&lt;/code&gt; method where the cli will
+output a url to follow, the user will sign in, and return a
+verification code.&lt;/p&gt;
+&lt;p&gt;After fixing this, remember to re-initiate the transfer with the&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;globus transfer&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;command as previously descibed.&lt;/p&gt;
+&lt;h2 id=&#34;managing-tasks&#34;&gt;Managing Tasks&lt;/h2&gt;
+&lt;p&gt;To monitor the status of active transfers, use&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;globus task list
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;or similarly you can use the web tool to verify transfers.&lt;/p&gt;
+&lt;h2 id=&#34;references&#34;&gt;References:&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Globus Data Transfer, Rivanna HPC &lt;a href=&#34;https://www.rc.virginia.edu/userinfo/globus/&#34;&gt;https://www.rc.virginia.edu/userinfo/globus/&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
