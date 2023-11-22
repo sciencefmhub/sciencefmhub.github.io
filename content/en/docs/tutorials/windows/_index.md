@@ -1,7 +1,7 @@
 ---
 title: "Windows"
 linkTitle: "Windows"
-icon: "fa-solid fa-greater-than"
+icon: "fa-solid fa-caret-right"
 weight: 20
 ---
 

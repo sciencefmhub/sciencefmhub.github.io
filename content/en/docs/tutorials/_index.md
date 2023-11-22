@@ -1,7 +1,7 @@
 ---
 title: "Tutorials"
 linkTitle: "Tutorials"
-icon: "fa-solid fa-info-circle"
+icon: "fa-solid fa-caret-right"
 weight: 20
 menu:
   main:

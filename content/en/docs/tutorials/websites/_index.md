@@ -1,7 +1,7 @@
 ---
 title: "Web Sites"
 linkTitle: "Web Sites"
-icon: "fa-solid fa-greater-than"
+icon: "fa-solid fa-caret-right"
 weight: 20
 ---
 
