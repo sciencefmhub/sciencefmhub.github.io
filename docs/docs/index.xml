@@ -15,6 +15,2130 @@
     
     
     <item>
+      <title>Docs: Getting Started with the bii_dsc_community</title>
+      <link>/docs/tutorials/getting_started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/tutorials/getting_started/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;contributing-your-tutorial-and-experiences&#34;&gt;Contributing your tutorial and experiences&lt;/h2&gt;
+&lt;p&gt;Please contribute to infomall.org as your experiences
+will help. Please remember that technology evolves fast,
+and we like to stay up to date by improving information.&lt;/p&gt;
+&lt;p&gt;Each page as an edit here feature, that you ca use to propose changes.
+The changes will be reviewed by Gregor and are not automatically posted
+online.&lt;/p&gt;
+&lt;p&gt;Once a change is accepted, the Web site will be published and
+updates are visible. Send an e-mail to Gergor for urgent updates.&lt;/p&gt;
+&lt;h2 id=&#34;activating-your-account&#34;&gt;Activating your account&lt;/h2&gt;
+&lt;p&gt;Do the following while sending an e-mail to Gregor:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Subject&lt;/strong&gt;: Activate my account &lt;Lastname&gt;, &lt;Firstname&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Body:&lt;/strong&gt; (fill in lastname and firstname. Do not use all caps)&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Firstname: 
+Lastname:
+e-mail:
+github.com:
+
+* [ ] Please add me to the `discord` 
+* [ ] Please add me to the unix groups:
+  * [ ] `biocomplexity`
+  * [ ] `nssac_students`
+  * [ ] `bii_dsc_community`
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;preparing-your-computer-for-research&#34;&gt;Preparing your computer for research&lt;/h2&gt;
+&lt;p&gt;Seee the documentation at&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/cybertraining-dsc/reu2022/blob/main/project/windows-configuration.md&#34;&gt;Configuring Windows for Research&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/cybertraining-dsc/reu2022/blob/main/project/git-bash-pseudo-console.md#using-git-bash-on-windows&#34;&gt;Using Git Bash on Windows&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;using-docker-on-your-computer&#34;&gt;Using Docker on your computer&lt;/h2&gt;
+&lt;p&gt;To isolate your computer form changes and to develop portable code we recommend
+using docker images. This is especially the case when using GPUs on your computer
+as this is these days the default distribution mechanism for NVIDIA software for
+research.&lt;/p&gt;
+&lt;h2 id=&#34;using-singularity-on-your-computer&#34;&gt;Using Singularity on your computer&lt;/h2&gt;
+&lt;p&gt;As Rivanna is using singularity, it is also beneficial to use singularity on
+your loacl computer as this can be used to create images for rivanna. However,
+note that due to the transfer speeds to rivanna the experience may be limited
+For that reason. we recommend you visit our
+[https://infomall.org/uva/docs/tutorial/singularity/](Tutorial on Singularity on Rivanna)&lt;/p&gt;
+&lt;h2 id=&#34;getting-an-account-on-rivanna&#34;&gt;Getting an account on Rivanna&lt;/h2&gt;
+&lt;p&gt;Please read&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://infomall.org/uva/docs/tutorial/&#34;&gt;See our infomall.org tutorials about rivanna&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cybertraining-dsc/reu2022/blob/main/project/windows-configuration.md&#34;&gt;Configuring Windows for Research&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/cybertraining-dsc/reu2022/blob/main/project/git-bash-pseudo-console.md#using-git-bash-on-windows&#34;&gt;Using Git Bash on Windows&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.rc.virginia.edu/userinfo/rivanna/login/#secure-shell-access-ssh&#34;&gt;Rivanna doc: Secure Shell access to Rivanna&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.rc.virginia.edu/userinfo/rivanna/logintools/rivanna-ssh/&#34;&gt;Rivanna doc&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.rc.virginia.edu/support/&#34;&gt;Please attend RIVANNA TUTORIAL &lt;/a&gt; See
+section &amp;ldquo;New to rivanna&amp;rdquo; on that page.
+If you can not attend, ask if they have recording of it. If you know the
+recording link, please add it here.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Do not make your account insecure&lt;/strong&gt;. On Rivanna&amp;rsquo;s documentation you will find
+a statement that we do &lt;strong&gt;NOT RECOMMEND TO FOLLOW&lt;/strong&gt; as it is not
+best security practice and can be handled in almost all cases differently.
+The statement on the official UVA Rivanna Web Site states:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Sometimes you will need to enable passwordless ssh.
+We allow passwordless ssh to frontend nodes from UVA
+IP addresses. Key authentication works by matching two
+halves of an encrypted keypair. The “public” key is
+placed within your home directory on the remote server
+and the “private” key is kept safely on your own workstation.
+You should treat private keys as securely as you would any password.&amp;quot;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Instead you need to use&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;computer&amp;gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;  eval `ssh-agent`
+  ssh-add
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;using-python&#34;&gt;Using Python&lt;/h2&gt;
+&lt;p&gt;When using anaconda, be careful as it takes over your python instalation and may not
+provide a level of inconsistant libraries when you do more complex stuff.
+Evaluate if you need anaconda or not. IN many cases it is best to just use vanilla
+python and use pip.&lt;/p&gt;
+&lt;p&gt;You can also switch between anaconda and regular python. for that you &lt;strong&gt;DO NOT USE&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;conda init&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Fix or outcomment anaconde from your .bashrc or .zshrc files.&lt;/p&gt;
+&lt;p&gt;If you are a conda expert, give us some tips and tutorials on this topic.&lt;/p&gt;
+&lt;p&gt;Always check if you use the correct version of python with&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;computer&amp;gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  which python
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  python --version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Please keep in mind: When attending university classes some teachers may give
+you convenient but inssuficcient instructions on how to use python. They are
+typically designed to make the use
+of python easy for a specific class and not necessarily easy for research.&lt;/p&gt;
+&lt;p&gt;Please keep in mind that you may have python versions that do not work properly
+on your computer if you have attended classes some years back. You will likely
+need to update your python. Often its good to unisntall your previous verison
+and reinstall.&lt;/p&gt;
+&lt;p&gt;If you need multiple python versions such as teacher A wants version X and
+wants version Y, this is possible. Just use python virtual environments,
+containers, or virtual machines. What you chose is your choice.&lt;/p&gt;
+&lt;h2 id=&#34;using-rivanna&#34;&gt;Using Rivanna&lt;/h2&gt;
+&lt;p&gt;Read&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://infomall.org/uva/docs/tutorial/rivanna/&#34;&gt;Using Rivanna&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Copy Files&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;rsync&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;scp&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;sftp&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/libfuse/sshfs#sshfs&#34;&gt;sshfs&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;[Copy files with rclone](Rclone on Rivanna)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://infomall.org/uva/docs/tutorial/globus/&#34;&gt;Copy files with globus&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;using-singularity-on-rivanna&#34;&gt;Using Singularity on Rivanna&lt;/h2&gt;
+&lt;p&gt;Read&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://infomall.org/uva/docs/tutorial/singularity/&#34;&gt;Using singularity on Rivanna&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;using-docker-on-rivanna-via-singularity&#34;&gt;Using Docker on Rivanna via Singularity&lt;/h3&gt;
+&lt;p&gt;Which they do not document but we do on infomall.org&lt;/p&gt;
+&lt;p&gt;I will go into this in tutorial. If you already have created a passwordless key,
+please redo it with a password &amp;hellip;.&lt;/p&gt;
+&lt;h2 id=&#34;onramping-tutorial-with-gregor&#34;&gt;Onramping Tutorial with Gregor&lt;/h2&gt;
+&lt;p&gt;If you need help on assessing your computer for research you can optionally
+send the folloing info to me.&lt;/p&gt;
+&lt;p&gt;email to &lt;a href=&#34;mailto:gregor@virginia.edu&#34;&gt;gregor@virginia.edu&lt;/a&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;os:
+size ram:
+size hdd/ssd:
+free space on hdd/ssd
+date purchased:
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;We observed that when using chrome and pycharm and zoom you may need lots of
+memory. Shut down all over applications. We recommend 16GB ram these days.
+However, many students have 8GB which may lead to slowing things down in
+some cases as you may hit the memory&lt;/p&gt;
+&lt;p&gt;For example, when Gregor runs chrome and
+pycharm he uses up 8.1GB RAM, so if you were to have an 8GB machine it would
+slow down. However, your usage of the RAM may vary dependent on what plugins and
+which version of software as well as the OS you use.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Please make sure to have some space on your computers HDD, send me how much
+free space you have&lt;/li&gt;
+&lt;li&gt;if windows, please install gitbash before meeting&lt;/li&gt;
+&lt;li&gt;if windows I recommend chocolatey, but be careful what you install&lt;/li&gt;
+&lt;li&gt;make sure you know how to use UVA vpn&lt;/li&gt;
+&lt;li&gt;set up ssh key with ssh-keygen and use password WRITE PASSWORD DOWN&lt;/li&gt;
+&lt;li&gt;set up ~/.ssh/config as&lt;/li&gt;
+&lt;li&gt;upload sshkey to github&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Make sure you employ backup strategy on external HDD or google or something
+like that. I have seen to many computer HDD break and this is standard best
+practice. We can discuss in meeting.&lt;/p&gt;
+&lt;p&gt;If anythinig unclear or you have questions let me know we will also go through
+the sshkey things
+if you do not understand.&lt;/p&gt;
+&lt;h2 id=&#34;editor&#34;&gt;Editor&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;use pycharm (best) on your local computer alternatively vscode&lt;/li&gt;
+&lt;li&gt;learn commandline edtor for rivanna emacs best. alternatives nano, pico, vim&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;cloudmesh-is-useful&#34;&gt;Cloudmesh is useful&lt;/h2&gt;
+&lt;p&gt;You will see that cloudmesh has many features that you will find useful.
+We focus here on a number of libraries useful for rivanna.&lt;/p&gt;
+&lt;p&gt;Please create venv, this depends on your os on how to do.&lt;/p&gt;
+&lt;p&gt;Name it ~/ENV3 (if you do conda do it in whatever fashion conda does, as I do
+not use conda you can help us writing documentation about it)&lt;/p&gt;
+&lt;p&gt;activate it and do&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;computer&amp;gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  python -m venv ~/ENV3
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#204a87&#34;&gt;source&lt;/span&gt; ~/ENV3
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  pip install pip -U
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  pip install cloudmesh-common
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  pip install cloudmesh-sbatch
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  pip install cloudmesh-rivanna
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  cms &lt;span style=&#34;color:#204a87&#34;&gt;help&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;On rivanna&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;computer&amp;gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;  python -m venv /project/bii_dsc_community/$USER/ENV3
+  source /project/bii_dsc_community/$USER/ENV3
+  pip install pip -U
+  pip install cloudmesh-common
+  pip install cloudmesh-sbatch
+  pip install cloudmesh-rivanna
+  pip install cloudmesh-gpu
+  cms help
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Make sure you are in Gregors discord&lt;/p&gt;
+&lt;p&gt;In future learn how to do cloudmesh StopWatch so you conveniently augment
+your code with timers&lt;/p&gt;
+&lt;p&gt;Gregor von Laszewski
+&lt;a href=&#34;mailto:laszewski@gmail.com&#34;&gt;laszewski@gmail.com&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Checklist</title>
+      <link>/docs/tutorials/checklist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/tutorials/checklist/</guid>
+      <description>
+        
+        
+        &lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; get UVA account&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; install vpn on your computer&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; install python on your computer&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; install cloudmesh rivanna on your computer&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; install cloudmesh vpn on your computer&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; create an ssh key&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; copy the ssh key to rivanna into authorized keys with &lt;code&gt;copy-ssh-id&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; configure your computers .bashrc file&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; configure your rivannas .bashrc file&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; apply with gregor for group access for singularity&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Facilities Statement</title>
+      <link>/docs/tutorials/rivanna/facilities/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/tutorials/rivanna/facilities/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;computing-environments-at-uva&#34;&gt;Computing Environments at UVA&lt;/h2&gt;
+&lt;p&gt;Research Computing (UVA-RC) serves as the principal center for computational resources and associated expertise at the University of Virginia (UVA). Each year UVA-RC provides services to over 433 active PIs that sponsor more than 2463 unique users from 14 different schools/organizations at the University, maintaining a breadth of systems to support the computational and data intensive research of UVA’s researchers.&lt;/p&gt;
+&lt;p&gt;High Performance Computing  UVA-RC’s High Performance Computing (HPC) systems are designed with high speed networks, high performance storage, GPUs, and large amounts of memory in order to support modern compute and memory intensive programs. UVA-RC’s HPC systems are comprised of over 614 compute nodes, with a total of 20476 X86 64-bit compute cores and 240 TB total RAM. Scheduled using Slurm, these resource can support over 1.5 PFLOP of peak CPU performance. HPC nodes are equipped with between 375 GB and 1 TB of RAM to support applications that require small and large amounts of memory, and 49 nodes include various configurations of the NVIDIA general purpose GPU accelerators (RTX2080, RTX3090, A6000, V100 and A100), from 4- to 10-way.   &lt;/p&gt;
+&lt;p&gt;UVA-RC also acquires and maintains capability systems focused on providing novel environments. This includes an 18-node DGX BasePOD system with 8x A100 GPU. The BasePOD provides a shared memory space across all GPUs in the system allowing the system to work collectively on models with memory needs larger than what can be held in a single node.&lt;/p&gt;
+&lt;h2 id=&#34;interactive-computing-and-scientific-visualization&#34;&gt;Interactive Computing and Scientific Visualization&lt;/h2&gt;
+&lt;p&gt;UVA-RC supports specialized interfaces (i.e., Open OnDemand, FastX) and hardware for remote visualization and interactive computing.  Interactive HPC systems allow real-time user inputs in order to facilitate code development, real-time data exploration, and visualizations.  Interactive HPC systems are used when data are too large to download to a desktop or laptop, software is difficult or impossible to install on a personal machine, or specialized hardware resources (e.g., GPUs) are needed to visualize large data sets.&lt;/p&gt;
+&lt;h2 id=&#34;expertise&#34;&gt;Expertise&lt;/h2&gt;
+&lt;p&gt;UVA-RC aggregates expertise to provide consulting and collaboration services to researchers addressing all levels of the Research Computing technology stack.&lt;/p&gt;
+&lt;p&gt;UVA-RCs user support staff provide basic support and general onboarding through helpdesk and regularly scheduled tutorials. Senior support staff have advanced degrees in relevant research domains such as biology, imaging, physics, computer science and material science, enabling in-depth collaboration on complex projects.  For projects that require significant application development work, UVA-RC maintains a Solutions &amp;amp; DevOps team capable of rapid iteration while leveraging non-traditional HPC technologies. Lastly, UVA-RC’s Infrastructure Services team enables projects that may require custom hardware or configurations outside of the standard images. Beyond their availability for direct project support, together these teams provide the R&amp;amp;D and operations expertise needed to ensure that UVA-RC is providing a modern research computing ecosystem for UVA researchers.&lt;/p&gt;
+&lt;h2 id=&#34;cloud-computing&#34;&gt;Cloud Computing&lt;/h2&gt;
+&lt;p&gt;Ivy is a secure computing environment for researchers consisting of virtual machines (Linux and Windows) backed by a total of 45 nodes and 2048 cores. Researchers can use Ivy to process and store sensitive data with the confidence that the environment is secure and meets HIPAA, FERPA, or CUI requirements.&lt;/p&gt;
+&lt;p&gt;For standard security projects, UVA-RC supports microservices in a clustered orchestration environment that leverages Kubernetes to automate the deployment and management of many containers in an easy and scalable manner. This cluster has 876 cores and 4.9TB of memory allocated to running containerized services, including one node with 4 x A100 GPUs. It also has over 300TB of cluster storage and can attach to UVA-RC’s broader storage offerings.&lt;/p&gt;
+&lt;h2 id=&#34;accorda&#34;&gt;ACCORDA&lt;/h2&gt;
+&lt;p&gt;The ACCORD project (NSF Award: #1919667) offers flexible web-based interfaces for sensitive and highly sensitive data in a system focused on supporting cross-institutional access and collaboration. The ACCORD platform consists of 8 nodes in a Kubernetes cluster, for a total of 320 cores and ~3.2TB of memory. Cluster storage is approximately 1PB of IBM Spectrum storage (GPFS).&lt;/p&gt;
+&lt;p&gt;Researchers from non-UVA institutions can be brought into the ACCORD system through a memorandum of understanding between the researcher’s institution and UVA, security training for the researcher, and a posture-checking client installed on the researcher’s laptop/desktop.&lt;/p&gt;
+&lt;h2 id=&#34;data-storage&#34;&gt;Data Storage&lt;/h2&gt;
+&lt;p&gt;All researchers on UVA-RC’s systems have access to a high-performance parallel storage platform. This system provides 8PB (PetaBytes) of storage with sustained read and write speeds of up to 10 GB/sec. The integrity of the data is protected by daily snapshots.  UVA-RC also supports a second-tier storage solution, 3 PB, designed to address the growing need for resources that support data-intensive research by offering a lower cost, scalable solution.  The system is tightly integrated with other UVA-RC storage and computing resources in order to support a wide variety of research data life cycles and data analysis workflows.&lt;/p&gt;
+&lt;h2 id=&#34;data-centers-network-connectivity-and-office-facilities&#34;&gt;Data Centers, Network Connectivity, and Office Facilities&lt;/h2&gt;
+&lt;p&gt;UVA-RC enables interdisciplinary research through its robust data center facilities with over 1.5 MW of IT capacity to support leading edge computational and data storage systems. UVA-RC’s equipment occupies a data center near campus, connected to the 10 Gbps campus network.  Dedicated 10 and 100 Gbps links to our regional optical network and Internet2 give our researchers the network capacity and capability needed to collaborate with researchers from around the world. A Globus data transfer node enables data access and transfers to transcend institutional credentials.  Located in the Ivy Translational Research Building of the Fontaine Research Park, UVA-RC’s offices (2,877 sq. ft) are a short shuttle ride away from the central UVA grounds.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Rivanna</title>
+      <link>/docs/tutorials/rivanna/rivanna/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/tutorials/rivanna/rivanna/</guid>
+      <description>
+        
+        
+        &lt;pre class=&#34;mermaid&#34;&gt;graph TB
+    subgraph Getting-Started
+    b1(UVA Account) 
+	b2(email to Gregor about groups)
+	b3(groups available)
+	b4(access to singularity build)
+	b1 --&amp;gt; b2 --&amp;gt; b3 --&amp;gt; b4
+    end
+    subgraph Windows
+    a1(gitbash)
+	a2(wsl)
+	a3[an &amp;lt;b&amp;gt;important&amp;lt;/b&amp;gt; &amp;lt;a href=&amp;#39;http://google.com&amp;#39;&amp;gt;link&amp;lt;/a&amp;gt;]
+    end&lt;/pre&gt;
+&lt;p&gt;Rivanna is the University of Virginia’s High-Performance Computing
+(HPC) system. As a centralized resource and has many software packages
+available. Currently, the Rivanna supercomputer has 603 nodes with
+over 20476 cores and 8PB of various storage. Rivanna has multiple
+nodes equipped with GPUs including RTX2080, RTX3090, K80, P100, V100,
+A100-40GB, A100-80GB.&lt;/p&gt;
+&lt;h2 id=&#34;communication&#34;&gt;Communication&lt;/h2&gt;
+&lt;p&gt;We have a team discord at: uva-bii-community&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://discord.gg/uFKJ5TUv&#34;&gt;https://discord.gg/uFKJ5TUv&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;please subscribe if you work on rivanna and are part of the
+bii_dsc_community.&lt;/p&gt;
+&lt;h2 id=&#34;rivanna-at-uva&#34;&gt;Rivanna at UVA&lt;/h2&gt;
+&lt;p&gt;The official Web page for Rivanna is located at&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.rc.virginia.edu/userinfo/rivanna/overview/&#34;&gt;https://www.rc.virginia.edu/userinfo/rivanna/overview/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In case you need support you can ask the staff using a ticket system
+at&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.rc.virginia.edu/support/&#34;&gt;https://www.rc.virginia.edu/support/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;This page also contains zoom office hours &lt;a href=&#34;https://virginia.zoom.us/j/304271094?pwd=Szdib1kzK1QySlE4eGRGL1BiclpLUT09&#34;&gt;Tue 3-5 pm&lt;/a&gt;,  &lt;a href=&#34;https://virginia.zoom.us/j/723009972?pwd=SWJMV09xMUp6M0lJY04yRXIwM1ZNdz09&#34;&gt;Thu 10-12 pm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It is important that before you use Rivanna to attend a seminar that
+upon request is given every Wednesday. To sign up, use the link:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.rc.virginia.edu/form/support-request/?category=Rivanna&amp;amp;request_title=Intro%20to%20Rivanna%20Orientation%20Session&amp;amp;description=I%27d%20like%20to%20reserve%20a%20seat%20for%20the%20next%20%22Intro%20to%20Rivanna%25,%203-4pm.&#34;&gt;Wednesday 3-4 pm Introduction&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Please note that in this introduction we will provide you with
+additional inforamation that may make the use of Rivanna easier.  We
+encourage you to add to this information and share your tips,&lt;/p&gt;
+&lt;h2 id=&#34;getting-permissions-to-use-rivanna&#34;&gt;Getting Permissions to use Rivanna&lt;/h2&gt;
+&lt;p&gt;To use Rivanna you need to have special authorization. In case you
+work with a faculty member you will need to be added to a special
+group (or multiple) to be able to access it. The faculty member will
+know which group it is. This is managed via the
+&lt;a href=&#34;https://virginia.service-now.com/its/?id=itsweb_kb_article&amp;amp;sys_id=ea1dffc7db3ac744f032f1f51d96193a&#34;&gt;group management portal&lt;/a&gt;
+by the faculty member. Please do not use the previous link and instead
+communicate with your faculty member first.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Note: For BII work conducted with Geoffrey Fox or Gregor von
+Laszewski, please contact Gregor at &lt;a href=&#34;mailto:laszewski@gmail.com&#34;&gt;laszewski@gmail.com&lt;/a&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;TODO: IS THIS THE CASE?&lt;/p&gt;
+&lt;p&gt;Once you are added to the group, you will receive an invitation email
+to set up password for the research computing support portal.
+If you do not recive such an email, please visit the support portal at&lt;/p&gt;
+&lt;p&gt;TBD&lt;/p&gt;
+&lt;p&gt;This
+password is also the password that you will use to log into the
+system.&lt;/p&gt;
+&lt;p&gt;END TODO IS THIS THE CASE&lt;/p&gt;
+&lt;p&gt;After your account is set up, you can try to log in through the
+&lt;a href=&#34;https://www.rc.virginia.edu/userinfo/rivanna/login/&#34;&gt;Web-based access&lt;/a&gt;.
+Please test it to make sure you have the proper access already.&lt;/p&gt;
+&lt;p&gt;However, we will typically notuse the online portal but instead use
+the more advanced batch system as it provides  significant advantages
+for you when managing multiple jobs to Fivanna.&lt;/p&gt;
+&lt;h2 id=&#34;accessing-an-hpc-computer-via-command-line&#34;&gt;Accessing an HPC Computer via command line&lt;/h2&gt;
+&lt;p&gt;If you need to use  X11 on Rivanna you can finde documentation at
+the rivanna documentation.
+In case you need
+to run
+&lt;a href=&#34;https://www.rc.virginia.edu/userinfo/rivanna/software/jupyterlab/&#34;&gt;jupyter&lt;/a&gt;
+notebooks directly on Rivanna, please consult with the Rivanna
+documentation.&lt;/p&gt;
+&lt;h3 id=&#34;vpn-required&#34;&gt;VPN (required)&lt;/h3&gt;
+&lt;p&gt;You can access rivanna via ssh only via VPN.  UVA requires you to use
+the VPN to access any computer on campus.  VPN is offered by IT
+services but oficially only supported for
+&lt;a href=&#34;https://virginia.service-now.com/its/?id=itsweb_kb_article&amp;amp;sys_id=f24e5cdfdb3acb804f32fb671d9619d0&#34;&gt;Mac and Windows&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;However, if you have a Linux machine you can follow the
+&lt;a href=&#34;https://www.rc.virginia.edu/userinfo/linux/uva-anywhere-vpn-linux/&#34;&gt;VPN install instructions for Linux&lt;/a&gt;.
+If you have issues installing it, attend an online support session
+with the Rivanna staff.&lt;/p&gt;
+&lt;h3 id=&#34;access-via-the-web-browser&#34;&gt;Access via the Web Browser&lt;/h3&gt;
+&lt;p&gt;Rivanna can be accessed right from the Web browser. Although this may
+be helpful for those with systems where a proper terminal can not be
+accessed it can not leverage the features of your own desktop or
+laptop while using for example advanced editors or keeping the file
+system of your machine in sync with the HPC file system.&lt;/p&gt;
+&lt;p&gt;Therefore, practical experience shows that you benefit while using a
+terminal and your own computer for software development.&lt;/p&gt;
+&lt;p&gt;Additiional documentation by the rivanna system staff is provided at&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.rc.virginia.edu/userinfo/rivanna/ood/overview/&#34;&gt;https://www.rc.virginia.edu/userinfo/rivanna/ood/overview/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;access-rivanna-from-macos-and-linux&#34;&gt;Access Rivanna from macOS and Linux&lt;/h3&gt;
+&lt;p&gt;To access Rivanna from macOS, use the terminal and use ssh to connect
+to it. We will provide an in depth configuration tutorial on this
+later on. We will use the same programs as on Linux and Windows so we
+have to only provide one documentation and it is uniform across
+platforms.&lt;/p&gt;
+&lt;p&gt;Please remember to use&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;commputer&amp;gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ &lt;span style=&#34;color:#204a87&#34;&gt;eval&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;`&lt;/span&gt;ssh-agent&lt;span style=&#34;color:#4e9a06&#34;&gt;`&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ ssh-add
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To activate ssh in your terminal&lt;/p&gt;
+&lt;h3 id=&#34;access-rivanna-from-windows&#34;&gt;Access Rivanna from Windows&lt;/h3&gt;
+&lt;p&gt;While exploring the various choices for accessing Rivanna from Windows
+you can use &lt;a href=&#34;https://www.putty.org/&#34;&gt;putty&lt;/a&gt; and
+&lt;a href=&#34;https://www.rc.virginia.edu/userinfo/rivanna/logintools/mobaxterm/&#34;&gt;MobaXterm&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;However, most recently a possible better choice is available while
+using &lt;a href=&#34;https://gitforwindows.org/&#34;&gt;gitbash&lt;/a&gt;. Git bash is trivial to
+install. However, you need to read the configuration options
+carefully. &lt;strong&gt;READ CAREFULLY&lt;/strong&gt; Let us know your options so we can add
+them here.&lt;/p&gt;
+&lt;p&gt;To simplify the setup of a Windows computer for research we have
+prepared a separate&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/cybertraining-dsc/reu2022/blob/main/project/windows-configuration.md&#34;&gt;help page to set up your Windows computer&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It addresses the installation of gitbash, Python, PyCharm (much better
+than VSCode), and other useful tools such as chocolate.&lt;/p&gt;
+&lt;p&gt;With git bash, you get a bash terminal that works the same as a Linux
+bash terminal and which is similar to the zsh terminal for a Mac.&lt;/p&gt;
+&lt;h2 id=&#34;set-up-the-connection-maclinux&#34;&gt;Set up the connection (mac/Linux)&lt;/h2&gt;
+&lt;p&gt;The first thing to do when trying to connect to Rivanna is to create
+an ssh key if you have not yet done so.&lt;/p&gt;
+&lt;p&gt;To do this use the command&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;commputer&amp;gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ssh-keygen
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Please make sure you use a passphrase when generating the key. Make
+sure to not just skip the passphrase by typing in ENTER but instead
+use a real not easy to guess passphrase as this is best practice and
+not in violation violation of security policies. You always can use
+use &lt;code&gt;ssh-agent&lt;/code&gt; and &lt;code&gt;ssh-add&lt;/code&gt; so you do not have to repeatedly enter
+your passphrase.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;ssh-keygen&lt;/code&gt; program will generate a public-private keypair in the
+directory &lt;code&gt;~/.ssh/id_rsa.pub&lt;/code&gt; (public key) and &lt;code&gt;~/.ssh/id_rsa&lt;/code&gt;. Please
+never share the private key with anyone.&lt;/p&gt;
+&lt;p&gt;Next, we need to add the public key to Rivanna&amp;rsquo;s
+&lt;code&gt;rivanna:~/.ssh/authorized_keys file&lt;/code&gt;. The easiest way to do this is
+to use the program &lt;code&gt;ssh-copy-id&lt;/code&gt;.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;commputer&amp;gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ssh-copy-id username@rivanna.hpc.virginia.edu
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Please use your password when using &lt;code&gt;ssh-copy-id&lt;/code&gt;. Your username is
+your UVA computing id. Now you should be ready to connect with&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;commputer&amp;gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ssh username@rivanna.hpc.virginia.edu
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;commandline-editor&#34;&gt;Commandline editor&lt;/h2&gt;
+&lt;p&gt;Sometimes it is necessary to edit files on Rivanna. For this, we
+recommend that you learn a command line editor. There are lots of
+debates on which one is better. When I was young I used vi, but found
+it too cumbersome. So I spend one-day learning emacs which is just
+great and all you need to learn. You can install it also on Linux,
+Mac, and Windows. This way you have one editor with very advanced
+features that is easy to learn.&lt;/p&gt;
+&lt;p&gt;If you do not have one day to familiarize yourself with editors such
+as emacs, vim, or vi, you can use editors such as nano and pico.&lt;/p&gt;
+&lt;p&gt;The best commandline editor is emacs. It is extremely easy to learn when using
+just the basics. The advantage is that the same commands also work in
+the terminal.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Keys&lt;/th&gt;
+&lt;th&gt;Action&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;CTRL-x c&lt;/td&gt;
+&lt;td&gt;Save in emacs&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;CTRL-x q&lt;/td&gt;
+&lt;td&gt;Leave&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;CTRL-x g&lt;/td&gt;
+&lt;td&gt;If something goes wrong&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;CTRL a&lt;/td&gt;
+&lt;td&gt;Go  to beginning line&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;CTRL e&lt;/td&gt;
+&lt;td&gt;Go to end of line&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;CTRL k&lt;/td&gt;
+&lt;td&gt;Delete till end of line from curser&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;cursor&lt;/td&gt;
+&lt;td&gt;Just works  ;-)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;pycharm&#34;&gt;PyCharm&lt;/h2&gt;
+&lt;p&gt;The best editor to do python development is pyCharm. Install it on
+your desktop. The education version is free.&lt;/p&gt;
+&lt;h2 id=&#34;vscode&#34;&gt;VSCode&lt;/h2&gt;
+&lt;p&gt;An inferior editor for python development is VSCode. It can be
+configured to also use a
+&lt;a href=&#34;https://code.visualstudio.com/docs/remote/ssh&#34;&gt;Remote-SSH&lt;/a&gt; plugin.&lt;/p&gt;
+&lt;h2 id=&#34;moving-data-from-your-desktop-to-rivanna&#34;&gt;Moving data from your desktop to Rivanna&lt;/h2&gt;
+&lt;p&gt;To copy a directory use &lt;code&gt;scp&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;If only a few lines have changed use &lt;code&gt;rsync&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;To mount Rivannas file system onto your computer use &lt;code&gt;fuse-ssh&lt;/code&gt;.
+This will allow you to for example use pyCharm to directly edit files on Rivanna.&lt;/p&gt;
+&lt;p&gt;Developers however often also use GitHub to push the code to git and
+then on Rivanna use pull to get the code from git. This has the
+advantage that you can use pyCharm on your local system while
+synchronizing the code via git onto Rivanna.&lt;/p&gt;
+&lt;p&gt;However often scp and rsync may just be sufficient.&lt;/p&gt;
+&lt;h2 id=&#34;example-config-file&#34;&gt;Example Config file&lt;/h2&gt;
+&lt;p&gt;Replace abc2de with your computing id&lt;/p&gt;
+&lt;p&gt;place this on your computer in &lt;code&gt;~/.ssh/config&lt;/code&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;~/.ssh/config&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ServerAliveInterval 60
+
+Host rivanna
+     User abc2de
+     HostName rivanna.hpc.virginia.edu
+     IdentityFile ~/.ssh/id_rsa.pub
+     
+Host b1
+     User abc2de
+     HostName biihead1.bii.virginia.edu
+     IdentityFile ~/.ssh/id_rsa.pub
+     
+Host b2
+     User abc2de
+     HostName biihead2.bii.virginia.edu
+     IdentityFile ~/.ssh/id_rsa.pub
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Adding it allows you to just ssh to the machines with&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;commputer&amp;gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ssh rivanna
+ssh b1
+ssh b2
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;rivannas-filesystem&#34;&gt;Rivanna&amp;rsquo;s filesystem&lt;/h2&gt;
+&lt;p&gt;The file systems on Rivanna have some restrictions that are set by
+system wide policies that you need to be inspecting:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TODO: add link here&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can alls see your quote with&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;rivanna&amp;gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;  hdquota
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;we distinguish&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;home directory: &lt;code&gt;/home/&amp;lt;uvaid&amp;gt;&lt;/code&gt; or &lt;code&gt;~&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/scratch/&amp;lt;uvaid&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/project/bii_dsc_community/projectname/&amp;lt;uvaid&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Y
+In your home directory, you will find system directories and files such as
+&lt;code&gt;~/.ssh&lt;/code&gt; , &lt;code&gt;~/.bashrc&lt;/code&gt;and &lt;code&gt;~/.zshrc&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;The difference in the file systems is explained at&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.rc.virginia.edu/userinfo/rivanna/storage/&#34;&gt;https://www.rc.virginia.edu/userinfo/rivanna/storage/&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;dealing-with-limited-space-under-home&#34;&gt;Dealing with limited space under HOME&lt;/h2&gt;
+&lt;p&gt;As we conduct research you may find that the file space in your home
+directory is insufficient. This is especially the case when using
+conda. Therefore, it is recommended that you create softlinks from
+your home directory to a location where you have more space. This is
+typically somewhere under &lt;code&gt;/project&lt;/code&gt; and &lt;code&gt;/scratch&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;We describe next how to relocate some of the directories to &lt;code&gt;/project&lt;/code&gt;
+and &lt;code&gt;/scratch&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;In &lt;code&gt;~/.bashrc&lt;/code&gt;, add the following lines, for creating a project
+directory.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ vi ~/.bashrc
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ &lt;span style=&#34;color:#000&#34;&gt;PS1&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;\w \$&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ &lt;span style=&#34;color:#204a87&#34;&gt;alias&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;project&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;cd /project/bii_dsc_community/$USER&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ &lt;span style=&#34;color:#204a87&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PROJECT&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;/project/bii_dsc_community/&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$USER&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ &lt;span style=&#34;color:#204a87&#34;&gt;alias&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;scratch&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;cd /scratch/$USER&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ &lt;span style=&#34;color:#204a87&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;PROJECT&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;/scratch/&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$USER&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;At the end of the .bashrc file use&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ &lt;span style=&#34;color:#204a87&#34;&gt;cd&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$PROJECT&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;or alternative to&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ &lt;span style=&#34;color:#204a87&#34;&gt;cd&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$SCRATCH&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;So you always cd directly into your project directory instead of home.&lt;/p&gt;
+&lt;p&gt;The home directory only has 50GB. Installing everything on the home
+directory will exceed the allocation and have problems with any
+execution.  So it’s better to move conda all other package
+installation directories to $PROJECT.&lt;/p&gt;
+&lt;p&gt;First, explore what is in your home directory and how much space it
+consumes with the following commands.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;cd&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$HOME&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ ls -lisa
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ du -h .
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Select from this list of directories that you want to move (those that
+you not already have moved).&lt;/p&gt;
+&lt;p&gt;Let us assume you want to move the directories &lt;code&gt;.local&lt;/code&gt;,
+&lt;code&gt;.vscode-server&lt;/code&gt;, and &lt;code&gt;.conda&lt;/code&gt;.  Important is that you want to make
+sure that .conda and .local are moved as they may include lots of
+files and you may run out of memory quickly.  Hence you do next the
+following.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;rivanna&amp;gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  $ &lt;span style=&#34;color:#204a87&#34;&gt;cd&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$PROJECT&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  $ mv ~/.local .
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  $ mv ~/.vscode-server .
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  $ mv ~/.conda .
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then create symbolic links to the home directory installed folder.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;rivanna&amp;gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ &lt;span style=&#34;color:#204a87&#34;&gt;cd&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$PROJECT&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ ln -s &lt;span style=&#34;color:#000&#34;&gt;$PROJECT&lt;/span&gt;/.local ~/.local
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ ln -s &lt;span style=&#34;color:#000&#34;&gt;$PROJECT&lt;/span&gt;/.vscode-server ~/.vscode-server
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ ln -s &lt;span style=&#34;color:#000&#34;&gt;$PROJECT&lt;/span&gt;/.conda ~/.conda
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Check all symbolic links:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;rivanna&amp;gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ls -lisa
+
+20407358289 4 lrwxrwxrwx 1 $USER users 40 May  5 10:58 .local -&amp;gt; /project/bii_dsc_community/djy8hg/.local
+20407358290 4 lrwxrwxrwx 1 $USER users 48 May  5 10:58 .vscode-server -&amp;gt; /project/bii_dsc_community/djy8hg/.vscode-server
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;singularity-cache&#34;&gt;Singularity Cache&lt;/h3&gt;
+&lt;p&gt;In case you use singularity you can build images you need to set the
+singularity cache. This is due to the fact that the cache usually is
+created in your home directory and is often far too small for even our
+small projects. Thus you need to set it as follows&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;rivanna&amp;gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  mkdir -p /scratch/&lt;span style=&#34;color:#000&#34;&gt;$USER&lt;/span&gt;/.singularity/cache
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#204a87&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;SINGULARITY_CACHEDIR&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;/scratch/&lt;span style=&#34;color:#000&#34;&gt;$USER&lt;/span&gt;/.singularity/cache
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;`&lt;/p&gt;
+&lt;h3 id=&#34;python&#34;&gt;Python&lt;/h3&gt;
+&lt;p&gt;In case you use python venv, do not place them in home but under
+project or scratch.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;rivanna&amp;gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;  module load python3.8
+  python -m venv $SCRATCH/ENV3
+  source $SCRATCH/ENV3/bin/activate
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If you succeed, you can also place the source line in your .bashrc
+file.&lt;/p&gt;
+&lt;p&gt;In case you use conda and python, we also recommend that you create a
+venv from the conda python, so you have a copy of that in ENV3 and if
+something goes wrong it is easy to recreate from your default
+python. Those that use that path ought to improve how to do this here.&lt;/p&gt;
+&lt;h3 id=&#34;adding-cloudmesh-rivanna-specific-commands-and-tools&#34;&gt;Adding cloudmesh rivanna specific commands and tools&lt;/h3&gt;
+&lt;p&gt;On your computer in your ENV3 add the following to enable the commands&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;computer&amp;gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip install pip -U
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip install cloudmesh-common
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip install cloudmesh-rivanna
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip install cloudmesh-sbatch
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip install cloudmesh-vpn
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;On Rivanna in ENV3 also add the gpu monitor&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;computer&amp;gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  pip install pip -U
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  pip install cloudmesh-common
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  pip install cloudmesh-gpu
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  pip install cloudmesh-rivanna
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  pip install cloudmesh-sbatch
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Please send me a mail to &lt;a href=&#34;mailto:laszewski@gmail.com&#34;&gt;laszewski@gmail.com&lt;/a&gt;
+if any requirements are missing as I may not yet have included
+all of them in the pip package.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Once you have activated it the cloudmesh rivanna command shows you combinations
+of SBATCH flags that you can use.&lt;/p&gt;
+&lt;p&gt;To see them type in&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;computer&amp;gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cms rivanna slurm list
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To login into a specific node you can say (lest assume you like to log into a k80&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;computer&amp;gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cms rivanna login v100
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Please be reminded that interactive login is only allowed for debugging all
+jobs must be submitted through sbatch.&lt;/p&gt;
+&lt;p&gt;To get the directives template to use that GPU, use&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;computer&amp;gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cms rivanna slurm v100
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;cloudmesh-sbatch&#34;&gt;cloudmesh sbatch&lt;/h3&gt;
+&lt;p&gt;Cloudmesh-sbatch is a super cool extension to sbatch allowing you to outomatically
+run parameters studies while creating permuattions on experiment parameters.
+At this time we try to create some sampel applications, but you can also ararnge
+a 30 minute meeting with Gregor so we try setting it up for your application with his help&lt;/p&gt;
+&lt;p&gt;See also:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://pypi.org/project/cloudmesh-sbatch/&#34;&gt;https://pypi.org/project/cloudmesh-sbatch/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Example application: &lt;a href=&#34;https://github.com/laszewsk/mlcommons/tree/main/benchmarks/cloudmask/target/rivanna&#34;&gt;https://github.com/laszewsk/mlcommons/tree/main/benchmarks/cloudmask/target/rivanna&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;make project; make submit&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;see Makefile for how to use it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://arxiv.org/abs/2210.16941&#34;&gt;Hybrid Reusable Computational Analytics Workflow Management with Cloudmesh&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;cloudmesh-vpn-command&#34;&gt;cloudmesh vpn command&lt;/h3&gt;
+&lt;p&gt;cloudmesh has a simple commandline vpn command that you can use to switch on
+and off vpn for UVA (and other vpn&amp;rsquo;s, we can add that feature ;-))&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;computer&amp;gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cms vpn connect
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ... &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;do&lt;/span&gt; your work in vpn such as working on rivanna
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cms vpn disconnect
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ... work on your regular network 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;load-modules&#34;&gt;Load modules&lt;/h2&gt;
+&lt;p&gt;Modules are preconfigured packages that allow you to use a specific
+software to be loaded into your environment without needing you to
+install it from source.
+To find out more about a particular package such as cmake you can use
+the command&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;rivanna&amp;gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  module spider cmake &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# check whether cmake is available and details&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Load the needed module (you can add version info). Note that some
+modules are dependent on other modules (&lt;code&gt;clang/10.0.1&lt;/code&gt; depends on
+&lt;code&gt;gcc/9.2.0&lt;/code&gt; so &lt;code&gt;gcc&lt;/code&gt; needs to be loaded first.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;rivanna&amp;gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# module load gcc/9.2.0 clang/10.0.1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  module load clanggcc
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  module load cmake/3.23.3 git/2.4.1 ninja/1.10.2-py3.8 llvm cuda/11.4.2
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;check currently loaded modules&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;rivanna&amp;gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  module list
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;clean all the modules&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;rivanna&amp;gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  module purge
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;request-gpus-to-use-interactively&#34;&gt;Request GPUs to use interactively&lt;/h2&gt;
+&lt;p&gt;TODO: explain what -A is&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;rivanna&amp;gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ijob -c number_of_cpus &lt;span style=&#34;color:#4e9a06&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&lt;/span&gt;     -A group_name &lt;span style=&#34;color:#4e9a06&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&lt;/span&gt;     -p queue_name &lt;span style=&#34;color:#4e9a06&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&lt;/span&gt;     --gres&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;gpu:gpu_model:number_of_gpus &lt;span style=&#34;color:#4e9a06&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&lt;/span&gt;     --time&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;day-hours:minutes:seconds
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;An example to request 1 cpu with 1 a100 gpu for 10 minutes in &amp;lsquo;dev&amp;rsquo; partition is&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;rivanna&amp;gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ijob -c &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt; -A bii_dsc_community -p gpu --gres&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;gpu:a100:1 --time&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;0-00:10:00
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Rivanna has different partitions with different resource availability
+and charging rate. &lt;code&gt;dev&lt;/code&gt; is free but limited to 1 hour for each
+session/allocation and no GPU is available. To list the different
+partitons use &lt;code&gt;qlist&lt;/code&gt; to check partitions&lt;/p&gt;
+&lt;p&gt;Last Checked July 28th, note thes values may change.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Queue&lt;/th&gt;
+&lt;th&gt;Total&lt;/th&gt;
+&lt;th&gt;Free&lt;/th&gt;
+&lt;th&gt;Jobs&lt;/th&gt;
+&lt;th&gt;Jobs&lt;/th&gt;
+&lt;th&gt;Time&lt;/th&gt;
+&lt;th&gt;SU&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;(partition)&lt;/td&gt;
+&lt;td&gt;Cores&lt;/td&gt;
+&lt;td&gt;Cores&lt;/td&gt;
+&lt;td&gt;Running&lt;/td&gt;
+&lt;td&gt;Pending&lt;/td&gt;
+&lt;td&gt;Limit&lt;/td&gt;
+&lt;td&gt;Charge&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;bii&lt;/td&gt;
+&lt;td&gt;4640&lt;/td&gt;
+&lt;td&gt;3331&lt;/td&gt;
+&lt;td&gt;31&lt;/td&gt;
+&lt;td&gt;15&lt;/td&gt;
+&lt;td&gt;7-00:00:00&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;standard&lt;/td&gt;
+&lt;td&gt;4080&lt;/td&gt;
+&lt;td&gt;496&lt;/td&gt;
+&lt;td&gt;1209&lt;/td&gt;
+&lt;td&gt;5670&lt;/td&gt;
+&lt;td&gt;7-00:00:00&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;dev&lt;/td&gt;
+&lt;td&gt;160&lt;/td&gt;
+&lt;td&gt;86&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;1:00:00&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;parallel&lt;/td&gt;
+&lt;td&gt;4880&lt;/td&gt;
+&lt;td&gt;1594&lt;/td&gt;
+&lt;td&gt;21&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;3-00:00:00&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;instructional&lt;/td&gt;
+&lt;td&gt;480&lt;/td&gt;
+&lt;td&gt;280&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;16&lt;/td&gt;
+&lt;td&gt;3-00:00:00&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;largemem&lt;/td&gt;
+&lt;td&gt;144&lt;/td&gt;
+&lt;td&gt;80&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;4-00:00:00&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;gpu&lt;/td&gt;
+&lt;td&gt;1876&lt;/td&gt;
+&lt;td&gt;1066&lt;/td&gt;
+&lt;td&gt;99&lt;/td&gt;
+&lt;td&gt;210&lt;/td&gt;
+&lt;td&gt;3-00:00:00&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;bii-gpu&lt;/td&gt;
+&lt;td&gt;608&lt;/td&gt;
+&lt;td&gt;542&lt;/td&gt;
+&lt;td&gt;18&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;3-00:00:00&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;bii-largemem&lt;/td&gt;
+&lt;td&gt;288&lt;/td&gt;
+&lt;td&gt;224&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;7-00:00:00&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;To list the limits, use the command &lt;code&gt;qlimits&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Last Checked July 28th, note these values may change.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Queue&lt;/th&gt;
+&lt;th&gt;Maximum&lt;/th&gt;
+&lt;th&gt;Maximum&lt;/th&gt;
+&lt;th&gt;Minimum&lt;/th&gt;
+&lt;th&gt;Maximum&lt;/th&gt;
+&lt;th&gt;Maximum&lt;/th&gt;
+&lt;th&gt;Default&lt;/th&gt;
+&lt;th&gt;Maximum&lt;/th&gt;
+&lt;th&gt;Minimum&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;(partition)&lt;/td&gt;
+&lt;td&gt;Submit&lt;/td&gt;
+&lt;td&gt;Cores(GPU)/User&lt;/td&gt;
+&lt;td&gt;Cores/Job&lt;/td&gt;
+&lt;td&gt;Mem/Node(MB)&lt;/td&gt;
+&lt;td&gt;Mem/Core(MB)&lt;/td&gt;
+&lt;td&gt;Mem/Core(MB)&lt;/td&gt;
+&lt;td&gt;Nodes/Job&lt;/td&gt;
+&lt;td&gt;Nodes/Job&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;bii&lt;/td&gt;
+&lt;td&gt;10000&lt;/td&gt;
+&lt;td&gt;cpu=400&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;354000+&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;9400&lt;/td&gt;
+&lt;td&gt;112&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;standard&lt;/td&gt;
+&lt;td&gt;10000&lt;/td&gt;
+&lt;td&gt;cpu=1000&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;384000+&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;9000&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;dev&lt;/td&gt;
+&lt;td&gt;10000&lt;/td&gt;
+&lt;td&gt;cpu=16&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;384000&lt;/td&gt;
+&lt;td&gt;9000&lt;/td&gt;
+&lt;td&gt;6000&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;parallel&lt;/td&gt;
+&lt;td&gt;2000&lt;/td&gt;
+&lt;td&gt;cpu=1500&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;384000&lt;/td&gt;
+&lt;td&gt;9600&lt;/td&gt;
+&lt;td&gt;9000&lt;/td&gt;
+&lt;td&gt;50&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;instructional&lt;/td&gt;
+&lt;td&gt;2000&lt;/td&gt;
+&lt;td&gt;cpu=20&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;384000&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;6000&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;largemem&lt;/td&gt;
+&lt;td&gt;2000&lt;/td&gt;
+&lt;td&gt;cpu=32&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;1500000&lt;/td&gt;
+&lt;td&gt;64000&lt;/td&gt;
+&lt;td&gt;60000&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;gpu&lt;/td&gt;
+&lt;td&gt;10000&lt;/td&gt;
+&lt;td&gt;gres/gpu=32&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;128000+&lt;/td&gt;
+&lt;td&gt;32000&lt;/td&gt;
+&lt;td&gt;6000&lt;/td&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;bii-gpu&lt;/td&gt;
+&lt;td&gt;10000&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;384000+&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;9400&lt;/td&gt;
+&lt;td&gt;12&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;bii-largemem&lt;/td&gt;
+&lt;td&gt;10000&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;1500000&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;31000&lt;/td&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;linux-commands-for-hpc&#34;&gt;Linux commands for HPC&lt;/h2&gt;
+&lt;p&gt;Many useful commands can be found in Gregor&amp;rsquo;s book at&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cloudmesh-community.github.io/pub/vonLaszewski-linux.pdf&#34;&gt;https://cloudmesh-community.github.io/pub/vonLaszewski-linux.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The following additional commands are quite useful on HPC systems&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;command&lt;/th&gt;
+&lt;th&gt;description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;allocations&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;check available account and balance&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;hdquota&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;check storage you has used&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;du -h --max-depth=1&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;check which directory uses most space&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;qlist&lt;/td&gt;
+&lt;td&gt;list the queues&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;qlimits&lt;/td&gt;
+&lt;td&gt;prints the limits of the queues&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;slurm-batch-parameters&#34;&gt;SLURM Batch Parameters&lt;/h2&gt;
+&lt;p&gt;We present next a number of default parameters for using a variety of
+GPUs on rivanna. Please note that you may need to adopt some
+parameters to adjust for cores or memory according to your
+application.&lt;/p&gt;
+&lt;h3 id=&#34;running-on-v100&#34;&gt;Running on v100&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --time=12:00:00
+#SBATCH --partition=bii-gpu
+#SBATCH --account=bii_dsc_community
+#SBATCH --gres=gpu:v100:1
+#SBATCH --job-name=MYNAME
+#SBATCH --output=%u-%j.out
+#SBATCH --error=%u-%j.err
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;running-on-a100-40gb&#34;&gt;Running on a100-40GB&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --time=12:00:00
+#SBATCH --partition=bii-gpu
+#SBATCH --account=bii_dsc_community
+#SBATCH --gres=gpu:a100:1
+#SBATCH --job-name=MYNAME
+#SBATCH --output=%u-%j.out
+#SBATCH --error=%u-%j.err
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;running-on-special-fox-node-a100-80gb&#34;&gt;Running on special fox node a100-80GB&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --time=12:00:00
+#SBATCH --partition=bii-gpu
+#SBATCH --account=bii_dsc_community
+#SBATCH --gres=gpu:a100:1
+#SBATCH --job-name=MYNAME
+#SBATCH --output=%u-%j.out
+#SBATCH --error=%u-%j.err
+#SBATCH --reservation=bi_fox_dgx
+#SBATCH --constraint=a100_80gb
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;some-suggestions&#34;&gt;Some suggestions&lt;/h2&gt;
+&lt;p&gt;When compiling large projects, you may neeed to make surue you have
+enough time and memory to conduct such compiles. This can be best
+achieved by using an interactive node, possibly from the large memory
+partition.&lt;/p&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Presentation about &lt;a href=&#34;https://docs.google.com/presentation/d/1Xt4kOtQpvl1JTDETJkOS-OMi8csZsJJw03xGus3QLA0&#34;&gt;SLURM on rivanna&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/cybertraining-dsc/reu2022/blob/main/project/hpc/rivanna-introduction.md&#34;&gt;Tutorial on using Rivanna&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Gregors book chapters
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/cloudmesh-community/book/tree/main/chapters&#34;&gt;https://github.com/cloudmesh-community/book/tree/main/chapters&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MPI with python:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cloudmesh.github.io/cloudmesh-mpi/report-mpi.pdf&#34;&gt;https://cloudmesh.github.io/cloudmesh-mpi/report-mpi.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-mpi&#34;&gt;https://github.com/cloudmesh/cloudmesh-mpi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Tutorials about cybertraining: &lt;a href=&#34;https://cybertraining-dsc.github.io/docs/tutorial/&#34;&gt;https://cybertraining-dsc.github.io/docs/tutorial/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Modules about cybertraining: &lt;a href=&#34;https://cybertraining-dsc.github.io/docs/modules/&#34;&gt;https://cybertraining-dsc.github.io/docs/modules/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;help-support&#34;&gt;Help Support&lt;/h2&gt;
+&lt;p&gt;When requesting help from Gregor or anyone make sure to completely specify the issue, a lot of things cannot be solved if you are not
+clear on the issue and where it is occurring. Include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The issue you are encountering.&lt;/li&gt;
+&lt;li&gt;Where it is occurring.&lt;/li&gt;
+&lt;li&gt;What you have done to try to resolve the issue.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A good example is:&lt;/p&gt;
+&lt;p&gt;I ran the application xyz, from url xyz on Rivanna. I placed code in
+the directory /project/&amp;hellip;. or I placed the data in /project/&amp;hellip; The
+download worked and I placed about 600GB. However when I uncompress
+the data with the command xyz I get the error xyz. What should we do now?&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Windows for Research</title>
+      <link>/docs/tutorials/windows/windows-configuration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/tutorials/windows/windows-configuration/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Unlike Linux and macOS, Windows runs on a completely different
+OS. Many coding environments are adapted to Linux, so Windows users
+must properly configure their machine to prepare it for a project.
+This is of special importance when working in environments supporting
+distributed cyberinfrastructure. Here in many cases Linux is required.&lt;/p&gt;
+&lt;h2 id=&#34;setting-up-the-python-environment&#34;&gt;Setting Up the Python Environment&lt;/h2&gt;
+&lt;p&gt;Often you need a specific version of Python. If in doubt, please
+install the newest one. At time of writing this document it
+is Python 3.10.5.&lt;/p&gt;
+&lt;p&gt;Please download and install it from  &lt;code&gt;python.org&lt;/code&gt;.
+We recommend that you uninstall Anaconda if you used that before
+and use the verison from python.org instead..
+Development is easier when using a native
+Python installation instead of anaconda/conda.&lt;/p&gt;
+&lt;p&gt;To uninstall anaconda, press the Windows key
+and type &amp;ldquo;Add or remove programs&amp;rdquo;. Then, press
+Enter and search for &lt;code&gt;conda&lt;/code&gt; in the &amp;ldquo;Search this
+list&amp;rdquo; box. Remove everything related to anaconda.
+Note that anaconda may have set some environment
+variables or added configuration scripts to your &lt;code&gt;.bashrc&lt;/code&gt;
+files in case you use gitbash. Please, remove them and make sure your
+Python version from python.org works as expected.&lt;/p&gt;
+&lt;p&gt;To code in Python, we recommend using PyCharm and not VSCode.&lt;/p&gt;
+&lt;p&gt;Pycharm and Git Bash can be installed with the instructions found in
+&lt;em&gt;Install.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Installation may be simplified while using chocolatey.&lt;/p&gt;
+&lt;p&gt;This includes&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;gitbash&lt;/li&gt;
+&lt;li&gt;pycharm&lt;/li&gt;
+&lt;li&gt;emacs&lt;/li&gt;
+&lt;li&gt;docker&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Before installing docker however you have to set up the
+appropriate hypervisor at boot time. PLease let us know how
+you set them for your machine, so we can add some information here.
+You will likely have to research it.&lt;/p&gt;
+&lt;p&gt;Please also know that you MUST uninstall virtualbox before you
+install docker, as old versions of virtualbox are incompatible
+with docker and it is just easier to uninstall virtualbox and reinstall it.&lt;/p&gt;
+&lt;p&gt;Next we summarize the installations using chocolatey.&lt;/p&gt;
+&lt;p&gt;Before installing anything, we recommend that you read the entire section.
+Especially when installing docker and if you do not have a brand new computer.&lt;/p&gt;
+&lt;h2 id=&#34;install-chocolatey&#34;&gt;Install Chocolatey&lt;/h2&gt;
+&lt;p&gt;To install chocolatey, follow the tutorial
+at &lt;a href=&#34;https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/main/content/en/docs/tutorial/reu/chocolatey/index.md&#34;&gt;https://github.com/cybertraining-dsc/cybertraining-dsc.github.io/blob/main/content/en/docs/tutorial/reu/chocolatey/index.md&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;install-git-bash&#34;&gt;Install Git Bash&lt;/h2&gt;
+&lt;p&gt;Git Bash must be installed with specific
+configurations, as the discrepancy between
+Windows and other operating systems can
+cause errors during runtime, if not
+properly configured. If Git Bash is already
+installed, uninstall it by pressing the Windows
+key and typing &lt;code&gt;Add or remove programs&lt;/code&gt; (and
+press Enter). Then locate and uninstall Git Bash.&lt;/p&gt;
+&lt;p&gt;To install Git Bash with chocolatey, issue
+the following command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ choco install git.install --params &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;/GitAndUnixToolsOnPath \
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;        /Editor:Nano /PseudoConsoleSupport /NoAutoCrlf&amp;#34;&lt;/span&gt; -y
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The &lt;code&gt;/NoAutoCrlf&lt;/code&gt; sets it so that the files are
+not downloaded via git with Windows line endings.
+If it were downloaded with such line endings, then
+it would cause programming bugs. Programmers should
+Commit As-Is to avoid conflicts.&lt;/p&gt;
+&lt;h2 id=&#34;install-pycharm-emacs-and-docker&#34;&gt;Install PyCharm, emacs, and Docker&lt;/h2&gt;
+&lt;p&gt;Uninstall PyCharm Community version if already
+installed on the computer by pressing the Windows
+key and typing &lt;code&gt;Add or remove programs&lt;/code&gt; (and
+press Enter). Then locate and uninstall PyCharm.&lt;/p&gt;
+&lt;p&gt;The following command installs PyCharm Professional,
+among other necessary development programs.
+To install these programs in an easy manner,
+issue the following command (you must have
+chocolatey installed):&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ choco install pycharm emacs docker-desktop -y
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;PyCharm is advantageous over other IDEs such
+as VSCode because students receive the professional
+version of PyCharm for free. Furthermore, PyCharm
+offers robust features such as Refactor and Inspect
+Code.&lt;/p&gt;
+&lt;p&gt;A guide to activating PyCharm with a free professional
+license is available at &lt;a href=&#34;https://youtu.be/QPESX-VBnEU&#34;&gt;https://youtu.be/QPESX-VBnEU&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;configure-pycharm&#34;&gt;Configure PyCharm&lt;/h2&gt;
+&lt;h3 id=&#34;set-hard-wrap&#34;&gt;Set hard wrap&lt;/h3&gt;
+&lt;p&gt;Press &lt;code&gt;Ctrl + Alt + S&lt;/code&gt; in PyCharm and expand the
+&lt;code&gt;Editor&lt;/code&gt; menu on the left-hand side. Then, click
+on &lt;code&gt;Code Style&lt;/code&gt; and enter &lt;code&gt;79&lt;/code&gt; in the &lt;code&gt;Hard wrap at:&lt;/code&gt;
+box. Also, check the &lt;code&gt;Wrap on typing&lt;/code&gt; checkbox.&lt;/p&gt;
+&lt;p&gt;This is done so that the text in files is uniformly
+indented at 79 columns.&lt;/p&gt;
+&lt;h3 id=&#34;makefile-tab-configuration-and-formatting&#34;&gt;Makefile Tab configuration and formatting&lt;/h3&gt;
+&lt;p&gt;To change what the Tab key does in a Makefile,
+open a Makefile in PyCharm and click on &lt;code&gt;Tab&lt;/code&gt;
+in the bottom right of the PyCharm interface.
+If you cannot find the &lt;code&gt;Tab&lt;/code&gt; button, then click
+on &lt;code&gt;View&lt;/code&gt; in the top-right, go to &lt;code&gt;Appearance&lt;/code&gt;,
+and make sure &lt;code&gt;Status Bar&lt;/code&gt; is checked.&lt;/p&gt;
+&lt;p&gt;After clicking the &lt;code&gt;Tab&lt;/code&gt; button in the
+bottom-right, click on &lt;code&gt;Configure Indents for Makefile...&lt;/code&gt; Tab size should be 4.&lt;/p&gt;
+&lt;p&gt;If PyCharm fails to render your Makefile correctly,
+right-click on the Makefile in your open files tabs
+and click &lt;code&gt;Override File Type&lt;/code&gt;. If you cannot find
+&lt;code&gt;Makefile&lt;/code&gt; in the list, you must install the &lt;code&gt;Makefile Language plugin&lt;/code&gt; for PyCharm.&lt;/p&gt;
+&lt;h2 id=&#34;preparing-for-virtualization&#34;&gt;Preparing for Virtualization&lt;/h2&gt;
+&lt;h3 id=&#34;docker&#34;&gt;Docker&lt;/h3&gt;
+&lt;p&gt;To enable virtualization for Docker on Windows machines, some
+preparations must be made.  First, if the user has VirtualBox
+installed it is suggested that they uninstall it and reinstall later
+if necessary. Some older versions of VirtualBox do not support other
+virtual images like Windows Subsystem for Linux (WSL).&lt;/p&gt;
+&lt;p&gt;Next, the BIOS settings must be changed to enable virtualization. To
+do this, search &lt;code&gt;Advanced startup&lt;/code&gt; in the Windows Search Bar and
+click &lt;code&gt;Restart now&lt;/code&gt;. Click &lt;code&gt;Troubleshoot&lt;/code&gt; and &lt;code&gt;Advanced startup options&lt;/code&gt;
+and then &lt;code&gt;UEFI Firmware Settings&lt;/code&gt; to get into the BIOS. NOTE: These are
+not exhaustive instructions because computer brands and hardware differ
+vastly. The main objective is to get into the BIOS and search
+for any &lt;code&gt;Virtualization&lt;/code&gt; or &lt;code&gt;Hyper V&lt;/code&gt; options in Windows BIOS configuration.
+For example, Lenovo brand laptops have a &lt;code&gt;Configure&lt;/code&gt; tab in the BIOS
+and the virtualization settings must be enabled under that menu.
+Then, the user must exit the BIOS while saving changes.&lt;/p&gt;
+&lt;p&gt;Better documentation on enabling virtualization, which is recommended by Docker
+and created by Berkeley, is located at &lt;a href=&#34;https://bce.berkeley.edu/enabling-virtualization-in-your-pc-bios.html&#34;&gt;https://bce.berkeley.edu/enabling-virtualization-in-your-pc-bios.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Lastly, check Windows features with &lt;code&gt;Turn Windows features on or off&lt;/code&gt;.
+For Docker, &lt;code&gt;Hyper-V&lt;/code&gt; and &lt;code&gt;Containers&lt;/code&gt; must be enabled.&lt;/p&gt;
+&lt;h3 id=&#34;wsl&#34;&gt;WSL&lt;/h3&gt;
+&lt;p&gt;WSL is a Linux virtual image designed for Windows. WSL 2 is typically
+used as opposed to WSL 1. To install, type this into administrative PowerShell:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PS&amp;gt; wsl --install
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To install a particular distribution, use &lt;code&gt;wsl --install -d &amp;lt;DistroName&amp;gt;&lt;/code&gt; instead. The available distributions can be found with&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;PS&amp;gt; wsl --list --online
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;After WSL is installed, it can be accessed by typing &lt;code&gt;wsl&lt;/code&gt; in
+Powershell. More documentation can be found in the &lt;a href=&#34;https://docs.microsoft.com/en-us/windows/wsl/install&#34;&gt;Microsoft
+Official Documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;directories-in-wsl&#34;&gt;Directories in WSL&lt;/h4&gt;
+&lt;p&gt;WSL creates a Linux environment in your Windows directory. To access
+your directories with WSL, a special syntax is used. For example, your
+home directory, typically &lt;code&gt;C:\Users\USERNAME&lt;/code&gt; and abbreviated to &lt;code&gt;~&lt;/code&gt;
+is the following with WSL: &lt;code&gt;/mnt/c/Users/USERNAME/&lt;/code&gt;. So to change
+directories to the Desktop in WSL, use this command:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-wsl&#34; data-lang=&#34;wsl&#34;&gt;$ cd /mnt/c/Users/USERNAME/Desktop
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;where &lt;code&gt;USERNAME&lt;/code&gt; is to be replaced with the name of the user.&lt;/p&gt;
+&lt;h2 id=&#34;bashrc&#34;&gt;bashrc&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;env&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;~/.ssh/agent.env
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;agent_load_env &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt; &lt;span style=&#34;color:#204a87&#34;&gt;test&lt;/span&gt; -f &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$env&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; . &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$env&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt; &amp;gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; /dev/null &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;agent_start &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;umask&lt;/span&gt; 077&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt; ssh-agent &amp;gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$env&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    . &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$env&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt; &amp;gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; /dev/null &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;agent_load_env
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# agent_run_state: 0=agent running w/ key; 1=agent w/o key; 2=agent not running&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;agent_run_state&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;$(&lt;/span&gt;ssh-add -l &amp;gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; /dev/null 2&amp;gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;amp;&lt;/span&gt;1&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color:#204a87&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$?&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt; ! &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$SSH_AUTH_SOCK&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;||&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$agent_run_state&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    agent_start
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ssh-add
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;elif&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$SSH_AUTH_SOCK&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$agent_run_state&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ssh-add
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;unset&lt;/span&gt; env
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;source&lt;/span&gt; ~/ENV3/Scripts/activate
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;cd&lt;/span&gt; ~/cm
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Windows Git Bash</title>
+      <link>/docs/tutorials/windows/windows-gitgbash/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/tutorials/windows/windows-gitgbash/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Git Bash is the terminal of choice for the Windows operating
+system. However, it must be properly configured for an optimal
+Python development experience; for example, Pseudo Console Support
+must be enabled.&lt;/p&gt;
+&lt;p&gt;First, uninstall Git Bash, if already installed.&lt;/p&gt;
+&lt;p&gt;If you installed Git with &lt;code&gt;choco&lt;/code&gt;, then do &lt;code&gt;choco uninstall git&lt;/code&gt;
+and &lt;code&gt;choco uninstall git.install&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;If you did not install Git with &lt;code&gt;choco&lt;/code&gt; and you instead used
+the installer wizard from the Git website, then
+press the Windows key, searching for &lt;code&gt;Add or remove programs&lt;/code&gt;, searching for &lt;code&gt;Git&lt;/code&gt;, clicking on it, then
+clicking &lt;code&gt;Uninstall&lt;/code&gt; and completing the uninstallation wizard.&lt;/p&gt;
+&lt;p&gt;If you do not have chocolatey then follow the tutorial at
+&lt;a href=&#34;https://chocolatey.org/install&#34;&gt;https://chocolatey.org/install&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Then install Git Bash in a Run as Administrator instance of Powershell by
+executing the choco command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ choco install git.install --params &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;/GitAndUnixToolsOnPath \
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;        /Editor:Nano /PseudoConsoleSupport /NoAutoCrlf&amp;#34;&lt;/span&gt; -y
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;For good measure, execute the following in Git Bash to enforce
+LF line endings:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ git config --global core.autocrlf &lt;span style=&#34;color:#204a87&#34;&gt;false&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Also, generate an ssh-key:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ ssh-keygen
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# press enter to save to default location&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# create a strong memorable password and confirm the password&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you do not have ENV3 Python virtual environment or cm dir,
+then execute these commands:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ python -m venv ~/ENV3
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ mkdir ~/cm
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The following is also an ideal &lt;code&gt;~/.bashrc&lt;/code&gt; file to have for
+cloudmesh development on Windows. You can create
+this &lt;code&gt;~/.bashrc&lt;/code&gt; file by saying &lt;code&gt;nano ~/.bashrc&lt;/code&gt; in Git Bash, copying
+the text below, and then pasting the text with keyboard shortcut
+&lt;code&gt;Shift&lt;/code&gt; + &lt;code&gt;Insert&lt;/code&gt;. Then say &lt;code&gt;Ctrl + X&lt;/code&gt;, &lt;code&gt;y&lt;/code&gt; and &lt;code&gt;Enter&lt;/code&gt;, and
+then &lt;code&gt;Enter&lt;/code&gt;. Then restart Git Bash.
+An error regarding bash profile after first
+relaunching Git Bash after this created file is expected.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;env&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;~/.ssh/agent.env
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;agent_load_env &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt; &lt;span style=&#34;color:#204a87&#34;&gt;test&lt;/span&gt; -f &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$env&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; . &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$env&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt; &amp;gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; /dev/null &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;agent_start &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;umask&lt;/span&gt; 077&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt; ssh-agent &amp;gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$env&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    . &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$env&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt; &amp;gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; /dev/null &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;agent_load_env
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# agent_run_state: 0=agent running w/ key; 1=agent w/o key; 2=agent not running&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;agent_run_state&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;$(&lt;/span&gt;ssh-add -l &amp;gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; /dev/null 2&amp;gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;&amp;amp;&lt;/span&gt;1&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color:#204a87&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$?&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt; ! &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$SSH_AUTH_SOCK&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;||&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$agent_run_state&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    agent_start
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ssh-add
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;elif&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;$SSH_AUTH_SOCK&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;[&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$agent_run_state&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;]&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ssh-add
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;unset&lt;/span&gt; env
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;source&lt;/span&gt; ~/ENV3/Scripts/activate
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;cd&lt;/span&gt; ~/cm
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;troubleshooting&#34;&gt;Troubleshooting&lt;/h2&gt;
+&lt;p&gt;If an &lt;code&gt;already installed&lt;/code&gt; message appears when trying to use choco to
+install Git Bash, such as&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git.install v2.33.0.2 already installed.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; Use --force to reinstall, specify a version to install, or try upgrade.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;then try &lt;code&gt;choco uninstall git&lt;/code&gt;. Then rerun the previously
+listed &lt;code&gt;choco install&lt;/code&gt; command.
+If that does not work, consider the &lt;code&gt;--force&lt;/code&gt; parameter
+mentioned in the warning message.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Rivanna Pod</title>
+      <link>/docs/tutorials/rivanna/rivanna-superpod/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/tutorials/rivanna/rivanna-superpod/</guid>
+      <description>
+        
+        
+        &lt;p&gt;This documentation is so far only useful for betatesters. In this
+group we have&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Gregor von Laszewski&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The rivanna documentation for the basic pod is available at&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.rc.virginia.edu/userinfo/rivanna/basepod/&#34;&gt;https://www.rc.virginia.edu/userinfo/rivanna/basepod/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;introducing-the-nvidia-dgx-basepod&#34;&gt;Introducing the NVIDIA DGX BasePOD&lt;/h2&gt;
+&lt;p&gt;Rivanna contains a BasePod with&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;10 DGX A100 nodes&lt;/li&gt;
+&lt;li&gt;8 A100 GPU devices&lt;/li&gt;
+&lt;li&gt;2 TB local node memory (per node)&lt;/li&gt;
+&lt;li&gt;80 GB GPU memory (per GPU device)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The following Advanced Features have now been enabled  on the BasePOD:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;NVLink for fast multi-GPU communication&lt;/li&gt;
+&lt;li&gt;GPUDirect RDMA Peer Memory for fast multi-node multi-GPU communication&lt;/li&gt;
+&lt;li&gt;GPUDirect Storage with 200 TB IBM ESS3200 (NVMe) SpectrumScale storage array&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;What this means to you is that the POD is ideal for the following scenarios:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The job needs multiple GPUs and/or even multiple nodes.&lt;/li&gt;
+&lt;li&gt;The job (can be single- or multi-GPU) is I/O intensive.&lt;/li&gt;
+&lt;li&gt;The job (can be single- or multi-GPU) requires more than 40 GB GPU
+memory. (We have 12 A100 nodes in total, 10 of which are the POD and
+2 are regular with 40 GB GPU memory per device.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Detailed specs can be found in the official document (Chapter 3.1):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.nvidia.com/dgx-basepod-reference-architecture-dgx-a100-and-dgx-h100.pdf&#34;&gt;https://docs.nvidia.com/dgx-basepod-reference-architecture-dgx-a100-and-dgx-h100.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;accessing-the-pod&#34;&gt;Accessing the POD&lt;/h2&gt;
+&lt;h3 id=&#34;allocation&#34;&gt;Allocation&lt;/h3&gt;
+&lt;p&gt;A single job can request up to 4 nodes with 32
+GPUs. Before running multi-node jobs, please make sure it can scale
+well to 8 GPUs on a single node.&lt;/p&gt;
+&lt;p&gt;Slurm script
+Please include the following lines:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#SBATCH -p gpu
+#SBATCH --gres=gpu:a100:X # replace X with the number of GPUs per node
+#SBATCH -C gpupod
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;open-ondemand&#34;&gt;Open OnDemand&lt;/h3&gt;
+&lt;p&gt;In &lt;em&gt;Optional: Slurm Option&lt;/em&gt; write:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;-C gpupod
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;interactive-login&#34;&gt;Interactive login&lt;/h3&gt;
+&lt;p&gt;Interactive login to the nodes should be &lt;strong&gt;VERY&lt;/strong&gt; limited and you need to use
+for most activities the batch queue. In case you need to look at thisng you can
+use our cloudmesh progarm to do so&lt;/p&gt;
+&lt;p&gt;Make sure to have vpn enabled and cloumdesh-rivanna installed via pip.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;computer&amp;gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;p&gt;cms rivanna login a100-pod&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt; 
+Will log you into a node. The time is set by default to 30 minutes. 
+Please immediatly log out after you are done with your work interactive 
+work.
+
+## Usage examples
+ 
+### Deep learning
+
+We will be migrating toward NVIDIA’s NGC containers for deep learning
+frameworks such as PyTorch and TensorFlow, as they have been heavily
+optimized to achieve excellent multi-GPU performance. These containers
+have not yet been installed as modules but can be accessed under
+/share/resources/containers/singularity:
+
+* pytorch_23.03-py3.sif
+* tensorflow_23.03-tf1-py3.sif
+* tensorflow_23.03-tf2-py3.sif
+
+(NGC has their own versioning scheme. The PyTorch and TensorFlow
+versions are 2.0.0, 1.15.5, 2.11.0, respectively.)
+ 
+The singularity command is of the form:
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;singularity run &amp;ndash;nv /path/to/sif python /path/to/python/script&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;
+**Warning:** Distributed training is not automatic! Your code must be
+parallelizable. If you are not familiar with this concept, please
+visit:
+
+* TF distributed training &amp;lt;https://www.tensorflow.org/guide/distributed_training&amp;gt;
+* PyTorch DDP &amp;lt;https://pytorch.org/docs/stable/notes/ddp.html&amp;gt;
+ 
+### MPI codes
+
+Please check the manual for your code regarding the relationship
+between the number of MPI ranks and the number of GPUs. For
+computational chemistry codes (e.g. VASP, QuantumEspresso, LAMMPS) the
+two are oftentimes equal, e.g.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;#SBATCH &amp;ndash;gres=gpu:a100:8
+#SBATCH &amp;ndash;ntasks-per-node=8&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;
+If you are building your own code, please load the modules nvhpc and
+cuda which provide NVIDIA compilers and CUDA libraries. The compute
+capability of the POD A100 is 8.0.
+ 
+For documentation and demos, refer to the *Resources* section at the
+bottom of this page: &amp;lt;https://developer.nvidia.com/hpc-sdk&amp;gt;
+ 
+ 
+We will be updating our website documentation gradually in the near
+future as we iron out some operational specifics. GPU-enabled modules
+are now marked with a (g) in the *module avail* command as shown
+below:
+
+
+TODO: output from maodule avail to be included
+ 
+ 
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Rivanna and Singularity</title>
+      <link>/docs/tutorials/rivanna/singularity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/tutorials/rivanna/singularity/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;singularity&#34;&gt;Singularity&lt;/h2&gt;
+&lt;p&gt;Singularity is a container runtime that implements a unique security model to
+mitigate privilege escalation risks and provides a platform to capture a complete
+application environment into a single file (SIF).&lt;/p&gt;
+&lt;p&gt;Singularity is often used in HPC centers.&lt;/p&gt;
+&lt;p&gt;University of Virginia granted us special permission to create
+Singularity images on rivanna. We discuss here how to build and run
+singularity images.&lt;/p&gt;
+&lt;h3 id=&#34;access&#34;&gt;Access&lt;/h3&gt;
+&lt;p&gt;In order for you to be able to access singularity and build images, you must be in the
+following groups:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;biocomplexity
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;nssac_students
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;bii_dsc_community
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To find out if you are, ssh into rivanna and issue the command&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ groups
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If any of the groups is missing, please send Gregor an e-mail at
+&lt;code&gt;laszewski@gmail.com&lt;/code&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;singularity-cache&#34;&gt;Singularity cache&lt;/h3&gt;
+&lt;p&gt;Before you can build images you need to set the singularity cache. This is due to the fact that the cache usually
+is created in your home directory and is often far too small for even our small projects. Thus you need to
+set it as follows&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;rivanna&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  mkdir -p /scratch/&lt;span style=&#34;color:#000&#34;&gt;$USER&lt;/span&gt;/.singularity/cache
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#204a87&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;SINGULARITY_CACHEDIR&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;/scratch/&lt;span style=&#34;color:#000&#34;&gt;$USER&lt;/span&gt;/.singularity/cache
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Please remember that scratch is not permanent. In case you like a bit more permanent location you can alternatively use&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;rivanna&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  mkdir -p /project/bii_dsc_community/&lt;span style=&#34;color:#000&#34;&gt;$USER&lt;/span&gt;/.singularity/cache
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#204a87&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;SINGULARITY_CACHEDIR&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;/project/bii_dsc_community/&lt;span style=&#34;color:#000&#34;&gt;$USER&lt;/span&gt;/.singularity/cache
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;builddef&#34;&gt;build.def&lt;/h3&gt;
+&lt;p&gt;To build an image you will need a build definition file&lt;/p&gt;
+&lt;p&gt;We show next an exxample of a simple &lt;code&gt;buid.def&lt;/code&gt; file that uses
+internally a
+&lt;a href=&#34;https://catalog.ngc.nvidia.com/orgs/nvidia/containers/pytorch&#34;&gt;NVIDIA NGC PyTorch container&lt;/a&gt;.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Bootstrap: docker
+From: nvcr.io/nvidia/pytorch:23.02-py3
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Next you can follow the steps that are detailed in
+&lt;a href=&#34;https://docs.sylabs.io/guides/3.7/user-guide/definition_files.html#sections&#34;&gt;https://docs.sylabs.io/guides/3.7/user-guide/definition_files.html#sections&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;However, for Rivanna we MUST create the image as discussed next.&lt;/p&gt;
+&lt;h3 id=&#34;creating-the-singularity-image&#34;&gt;Creating the Singularity Image&lt;/h3&gt;
+&lt;p&gt;In order for you to create a singularity container from the
+&lt;code&gt;build.def&lt;/code&gt; file please login to either of the following special nodes
+on Rivanna:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;biihead1.bii.virginia.edu&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;biihead2.bii.virginia.edu&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ssh &lt;span style=&#34;color:#000&#34;&gt;$USER&lt;/span&gt;@biihead1.bii.virginia.edu
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;where $USER is your computing ID on Rivanna.&lt;/p&gt;
+&lt;p&gt;Now that you are logged in to the special node, you can create the
+singularity image with the following command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo /opt/singularity/3.7.1/bin/singularity build output_image.sif build.def
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Note: &lt;strong&gt;It is important that you type in only this command. If you modify
+the name output_image.sif or build.def the command will not work and you will
+recieve an authorization error.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In case you need to rename the image to a better name please use the &lt;code&gt;mv&lt;/code&gt; command.&lt;/p&gt;
+&lt;p&gt;In case you also need to have a different name other then build.def
+the following Makefile is very useful. We assume you use &lt;code&gt;myimage.def&lt;/code&gt;
+and &lt;code&gt;myimage.sif&lt;/code&gt;. Include it into a makefile such as:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;BUILD=myimage.def
+IMAGE=myimage.sif
+
+image:
+	cp ${BUILD} build.def
+	sudo /opt/singularity/3.7.1/bin/singularity build output_image.sif build.def
+	cp output_image.sif ${IMAGE}
+	make -f clean
+
+clean:
+	rm -rf build.def output_image.sif
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Having such a &lt;code&gt;Makefile&lt;/code&gt; will allow you to use the command&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;make image
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;and the image &lt;code&gt;myimage.sif&lt;/code&gt; will be created. with make clean you will
+delete the temporary files &lt;code&gt;build.def&lt;/code&gt; and &lt;code&gt;output_image.sif&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;create-a-singularity-image-for-tensorflow&#34;&gt;Create a singularity image for tensorflow&lt;/h2&gt;
+&lt;p&gt;TODO&lt;/p&gt;
+&lt;h2 id=&#34;work-with-singularity-container&#34;&gt;Work with Singularity container&lt;/h2&gt;
+&lt;p&gt;Now that you have an image, you can use it while using the
+documentation provided at
+&lt;a href=&#34;https://www.rc.virginia.edu/userinfo/rivanna/software/containers/&#34;&gt;https://www.rc.virginia.edu/userinfo/rivanna/software/containers/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;run-gpu-images&#34;&gt;Run GPU images&lt;/h3&gt;
+&lt;p&gt;To use NVIDIA GPU with Singularity, &lt;code&gt;--nv&lt;/code&gt; flag is needed.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-basg&#34; data-lang=&#34;basg&#34;&gt;singularity exec --nv output_image.sif python myscript.py
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;TODO: THE NEXT PARAGRAPH IS WRONG&lt;/p&gt;
+&lt;p&gt;Since Python is defined as the default command to be excuted and
+singularity passes the argument(s) after the image name,
+i.e. myscript.py, to the Python interpreter. So the above singularity
+command is equivalent to&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;singularity run --nv output_image.sif myscript.py
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;run-images-interactively&#34;&gt;Run Images Interactively&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ijob  -A mygroup -p gpu --gres&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;gpu -c &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;module purge
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;module load singularity
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;singularity shell --nv output_image.sif
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;singularity-filesystem-on-rivanna&#34;&gt;Singularity Filesystem on Rivanna&lt;/h2&gt;
+&lt;p&gt;The following paths are exposed to the container by default&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;/tmp&lt;/li&gt;
+&lt;li&gt;/proc&lt;/li&gt;
+&lt;li&gt;/sys&lt;/li&gt;
+&lt;li&gt;/dev&lt;/li&gt;
+&lt;li&gt;/home&lt;/li&gt;
+&lt;li&gt;/scratch&lt;/li&gt;
+&lt;li&gt;/nv&lt;/li&gt;
+&lt;li&gt;/project&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;adding-custom-bind-paths&#34;&gt;Adding Custom Bind Paths&lt;/h3&gt;
+&lt;p&gt;For example, the following command adds the /scratch/$USER directory
+as an overlay without overlaying any other user directories provided
+by the host:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;singularity run -c -B /scratch/&lt;span style=&#34;color:#000&#34;&gt;$USER&lt;/span&gt; output_image.sif
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To add the /home directory on the host as /rivanna/home inside the container:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;singularity run -c -B /home:/rivanna/home output_image.sif
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;faq&#34;&gt;FAQ&lt;/h2&gt;
+&lt;h3 id=&#34;adding-singularity-to-slurm-scripts&#34;&gt;Adding singularity to slurm scripts&lt;/h3&gt;
+&lt;p&gt;TBD&lt;/p&gt;
+&lt;h3 id=&#34;running-on-v100&#34;&gt;Running on v100&lt;/h3&gt;
+&lt;p&gt;TBD&lt;/p&gt;
+&lt;h3 id=&#34;running-on-a100-40gb&#34;&gt;Running on a100-40GB&lt;/h3&gt;
+&lt;p&gt;TBD&lt;/p&gt;
+&lt;h3 id=&#34;running-on-a100-80gb&#34;&gt;Running on a100-80GB&lt;/h3&gt;
+&lt;p&gt;TBD&lt;/p&gt;
+&lt;h3 id=&#34;running-on-special-fox-node-a100-80gb&#34;&gt;RUnning on special fox node a100-80GB&lt;/h3&gt;
+&lt;p&gt;TBD&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Rclone on Rivanna</title>
+      <link>/docs/tutorials/file-transfer/rclone/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/tutorials/file-transfer/rclone/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;using-the-rclone-module-on-rivanna&#34;&gt;Using the Rclone Module on Rivanna&lt;/h1&gt;
+&lt;p&gt;Rclone is a useful tool to upload and download from cloud
+services such as Google Drive by using the commandline.
+However, a web browser is required for initial setup,
+which can be done from the computer that logs into Rivanna.&lt;/p&gt;
+&lt;h2 id=&#34;setup-rclone-on-rivanna&#34;&gt;Setup Rclone on Rivanna&lt;/h2&gt;
+&lt;p&gt;First, load the newer version of module; otherwise, Rivanna
+loads an incompatible, older version by default. Then, initialize
+a new rclone configuration and enter the following inputs:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ module load rclone/1.61.1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ rclone config
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;n/s/q&amp;gt; n
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;name&amp;gt; gdrive
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Storage&amp;gt; drive
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;A client ID is required to create a provision that interfaces
+with Google Drive. Follow the instructions at
+&lt;a href=&#34;https://rclone.org/drive/#making-your-own-client-id&#34;&gt;https://rclone.org/drive/#making-your-own-client-id&lt;/a&gt; to create
+a client ID and then input the values into Rivanna.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;client_id&amp;gt; myCoolID..
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;client_secret&amp;gt; verySecretClientSecret..
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;scope&amp;gt; &lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# read only&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;service_account_file&amp;gt; &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# just press enter&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Edit advanced config?
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;y&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt; Yes
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;n&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt; No &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;default&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;y/n&amp;gt; n
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Use web browser to automatically authenticate rclone with remote?
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;y/n&amp;gt; n
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;install-rclone-on-client-computer&#34;&gt;Install Rclone on Client Computer&lt;/h2&gt;
+&lt;p&gt;If the computer used to log on to Rivanna is running Windows,
+and the computer has Chocolatey, then download Rclone using an
+administrative Git Bash instance with&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ choco install rclone -y
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Otherwise, for Linux and macOS, use&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ sudo -v &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt; curl https://rclone.org/install.sh &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; sudo bash
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then, after opening a new instance of the terminal, paste the command given
+into Git Bash and follow the instructions.&lt;/p&gt;
+&lt;h2 id=&#34;rclone-authentication&#34;&gt;Rclone Authentication&lt;/h2&gt;
+&lt;p&gt;In the web browser, click Advanced when google says that they
+have not verified this app; it is safe and expected. Then click
+Go to rclone, then Continue.&lt;/p&gt;
+&lt;p&gt;When Rclone gives the config token, ensure that all new line
+characters are removed. This can be done by pasting the code
+into an application such as Notepad and manually ensuring that
+all characters are on the same line. Otherwise, the code will
+be split across new prompts, breaking the setup.&lt;/p&gt;
+&lt;p&gt;This is bad:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sjgnkajdfnkj
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;fdnskjafnkad
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;asdfnasjkffd
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This is good:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sjgnkajdfnkjfdnskjafnkadasdfnasjkffd
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Paste the fixed token into Rivanna.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;config_token&amp;gt; myCoolCodeThatHasNoNewLineCharacters
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Configure this as a Shared Drive &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;Team Drive&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;?
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;y&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt; Yes
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;n&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt; No &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;default&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;y/n&amp;gt; n
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Keep this &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;gdrive&amp;#34;&lt;/span&gt; remote?
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;y&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt; Yes this is OK &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;(&lt;/span&gt;default&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;y/e/d&amp;gt; y
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;q&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;)&lt;/span&gt; Quit config
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;e/n/d/r/c/s/q&amp;gt; q
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;An example command to use Rclone is as follows.
+The flag &lt;code&gt;--drive-shared-with-me&lt;/code&gt; restricts the scope to
+only shared files.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ rclone copy --drive-shared-with-me gdrive:Colab&lt;span style=&#34;color:#4e9a06&#34;&gt;\ &lt;/span&gt;Datasets/EarthquakeDec2020  /scratch/&lt;span style=&#34;color:#000&#34;&gt;$USER&lt;/span&gt;/EarthquakeDec2020 -P
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Docker</title>
+      <link>/docs/tutorials/docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/tutorials/docker/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Docker drivers images from NVIDIA&lt;/p&gt;
+&lt;h2 id=&#34;install-gpu-drivers-in-a-docker-image&#34;&gt;Install GPU drivers in a docker image&lt;/h2&gt;
+&lt;p&gt;NVIDIA GPU drivers can be installed into docker images.
+As the software may frequently cange, we recommend to look at
+the &lt;a href=&#34;https://nvidia.github.io/nvidia-container-runtime&#34;&gt;Nvidia documentation&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;An example to add to a debian based Dockerfile to install the GPU drivers (this may be incomplete and you need to check the instructions):&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;RUN curl -s -L https://nvidia.github.io/nvidia-container-runtime/gpgkey | \
+    apt-key add - \ &amp;amp;&amp;amp;
+    distribution=$(. /etc/os-release;echo $ID$VERSION_ID) \ &amp;amp;&amp;amp;
+    curl -s -L https://nvidia.github.io/nvidia-container-runtime/$distribution/nvidia-container-runtime.list | 
+RUN apt-get update \ &amp;amp;&amp;amp;
+apt-get install -y nvidia-container-runtime
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#debian-installation&#34;&gt;https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#debian-installation&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html&#34;&gt;https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Globus</title>
+      <link>/docs/tutorials/file-transfer/globus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/tutorials/file-transfer/globus/</guid>
+      <description>
+        
+        
+        &lt;h1 id=&#34;getting-the-cosmoflow-data-via-globus-commandline&#34;&gt;Getting the Cosmoflow data via globus commandline&lt;/h1&gt;
+&lt;h2 id=&#34;data-directory&#34;&gt;Data Directory&lt;/h2&gt;
+&lt;p&gt;We will showcase how to transfer data via globus
+commandline tools.&lt;/p&gt;
+&lt;p&gt;In our example we will use the data directory as&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;DATA&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;/project/bii_dsc_community/&lt;span style=&#34;color:#000&#34;&gt;$USER&lt;/span&gt;/cosmoflow/data
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;globus-set-up-on-rivanna&#34;&gt;Globus Set Up on Rivanna&lt;/h2&gt;
+&lt;p&gt;Rivanna allows to load the Globus file transfer command line tools via
+the modules command with the following commands. However, prior to
+executing globus login, please visit &lt;a href=&#34;https://www.globus.org/&#34;&gt;https://www.globus.org/&lt;/a&gt; and log
+in using your UVA credentials.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;module load globus_cli
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;globus login
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The &lt;code&gt;globus login&lt;/code&gt; method will output a unique link per user that you
+should paste into a web browser and sign in with using your UVA
+credentials. Afterwords, the website will present you with a unique
+sign-in key that you will need to paste back into the command line to
+verify your login.&lt;/p&gt;
+&lt;p&gt;After executing &lt;code&gt;globus login&lt;/code&gt; your console should look like the
+following block.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;NOTE: this is a unique link generated for the example login,
+each user will have a different link.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;-bash-4.2$globus login
+Please authenticate with Globus here:
+------------------------------------
+https://auth.globus.org/v2/oauth2/authorize?client_id=affbecb5-5f93-404e-b342-957af296dea0&amp;amp;redirect_uri=https%3A%2F%2Fauth.globus.org%2Fv2%2Fweb%2Fauth-code&amp;amp;scope=openid+profile+email+urn%3Aglobus%3Aauth%3Ascope%3Aauth.globus.org%3Aview_identity_set+urn%3Aglobus%3Aauth%3Ascope%3Atransfer.api.globus.org%3Aall&amp;amp;state=_default&amp;amp;response_type=code&amp;amp;access_type=offline&amp;amp;prompt=login
+------------------------------------
+
+Enter the resulting Authorization Code here:
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Follow the url and input the authorization code to login successfully.&lt;/p&gt;
+&lt;h2 id=&#34;source-endpoint-search&#34;&gt;Source Endpoint Search&lt;/h2&gt;
+&lt;p&gt;First, verify that you were able to sign in properly, and verify your
+identity and then search for the source endpoint of the data you want
+to transfer. In this example, our endpoint is named &lt;code&gt;CosmoFlow benchmark data cosmoUniverse_2019_02_4parE&lt;/code&gt;. Please note that the file
+to be downloaded is 1.7 TB large. Make sure that the system on which
+you download it has enough space. The following commands
+will verify your sign in identity and then search for an endpoint
+within the single quotation marks.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;globus get-identities -v &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;youremail@gmailprobably.com&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;globus endpoint search &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;CosmoFlow benchmark data cosmoUniverse_2019_02_4parE&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Each globus endpoint has a unique endpoint ID. In this case our source endpoint ID is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;d0b1b73a-efd3-11e9-993f-0a8c187e8c12&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Set up a variable &lt;code&gt;ENDPOINT&lt;/code&gt; so you can use the endpoint more easily without retyping it.
+Also set a variable &lt;code&gt;SRC_DIR&lt;/code&gt; to indicate the directory with the files to be transferred.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;SRC_ENDPOINT&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;d0b1b73a-efd3-11e9-993f-0a8c187e8c12
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;SRC_DIR&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;/~/
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can look at the files in the globus endpoint using &lt;code&gt;globus ls&lt;/code&gt; to
+verify that you are looking at the right endpoint.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;globus ls &lt;span style=&#34;color:#000&#34;&gt;$SRC_ENDPOINT&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;destination-endpoint-set-up&#34;&gt;Destination Endpoint Set Up&lt;/h2&gt;
+&lt;p&gt;Rivanna HPC has set a special endpoint for data transfers into the
+&lt;code&gt;/project&lt;/code&gt;, &lt;code&gt;/home&lt;/code&gt;, or &lt;code&gt;/scratch&lt;/code&gt; directories. The name of this
+destination endpoint will be &lt;code&gt;UVA Standard Security Storage&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Repeat the above steps with this endpoint and set up the variables
+including a &lt;code&gt;path&lt;/code&gt; variable with the desired path to write to.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;globus endpoint search &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#39;UVA Standard Security Storage&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;DEST_ENDPOINT&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;e6b338df-213b-4d31-b02c-1bc2c628ca07
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;DEST_DIR&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;/dtn/landings/users/u/uj/&lt;span style=&#34;color:#000&#34;&gt;$USER&lt;/span&gt;/project/bii_dsc_community/uja2wd/cosmoflow/
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;NOTE: We cannot set the path to start at the root level in rivanna
+and instead need to follow a few steps to find the specific path of
+where to write to.&lt;/p&gt;
+&lt;p&gt;To begin, our path must start with &lt;code&gt;/dtn/landings/users/&lt;/code&gt;
+and is then appended on a unique sequence depending on the users computing ID.
+The rest of the path is dependent on characters of the users computing ID.
+As an example, if your computing ID is abc5xy, the next three arguments are
+&lt;code&gt;/a/ab/abc5xy&lt;/code&gt; (first char, first two chars, computing id), at this point the
+user is essentially in the root level of rivanna and can access
+&lt;code&gt;/home&lt;/code&gt;, &lt;code&gt;/project&lt;/code&gt;, or &lt;code&gt;/scratch&lt;/code&gt; how they normally would.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note: If you want to use the web format of Globus to find the path isntead.
+Follow the below steps to find the desired value of your path var.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;First sign into the web format of globus&lt;/li&gt;
+&lt;li&gt;Locate &lt;code&gt;file manager&lt;/code&gt; on the left side of the screen&lt;/li&gt;
+&lt;li&gt;In the &lt;code&gt;collections&lt;/code&gt; box at the top of the screen begin to search
+for &lt;code&gt;UVA Standard Security Storage&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Select our destination endpoint&lt;/li&gt;
+&lt;li&gt;Use the GUI tool to select exactly where you wish to write to&lt;/li&gt;
+&lt;li&gt;Copy the path from the box immedietally below &lt;code&gt;collections&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Write this value to the DEST_DIR variable created above (I have
+included my path to where I wish to write to)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;initiate-the-transfer&#34;&gt;Initiate the Transfer&lt;/h2&gt;
+&lt;p&gt;Finally, execute the transfer&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;globus transfer &lt;span style=&#34;color:#000&#34;&gt;$SRC_ENDPOINT&lt;/span&gt;:&lt;span style=&#34;color:#000&#34;&gt;$SRC_DIR&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$DEST_ENDPOINT&lt;/span&gt;:&lt;span style=&#34;color:#000&#34;&gt;$DEST_DIR&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;NOTE: In case your first transfer may have an issue because you need to give
+globus permission to initiate transfers via the CLI instead of via the
+web tool. I was given the unique command as follows by my terminal:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;-bash-4.2&lt;span style=&#34;color:#000&#34;&gt;$globus&lt;/span&gt; transfer &lt;span style=&#34;color:#000&#34;&gt;$SRC_ENDPOINT&lt;/span&gt;:&lt;span style=&#34;color:#000&#34;&gt;$SRC_DIR&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;$DEST_ENDPOINT&lt;/span&gt;:&lt;span style=&#34;color:#000&#34;&gt;$DEST_DIR&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;The collection you are trying to access data on requires you to grant
+consent for the Globus CLI to access it.  message: Missing required
+data_access consent
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Please run&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;  globus session consent &amp;#39;urn:globus:auth:scope:transfer.api.globus.org:all[*https://auth.globus.org/scopes/e6b338df-213b-4d31-b02c-1bc2c628ca07/data_access]&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;to login with the required scopes&lt;/p&gt;
+&lt;p&gt;After initiating this command, a similar sign in a verification will
+be conducted compared to the &lt;code&gt;globus login&lt;/code&gt; method where the cli will
+output a url to follow, the user will sign in, and return a
+verification code.&lt;/p&gt;
+&lt;p&gt;After fixing this, remember to re-initiate the transfer with the&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;globus transfer&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;command as previously descibed.&lt;/p&gt;
+&lt;h2 id=&#34;managing-tasks&#34;&gt;Managing Tasks&lt;/h2&gt;
+&lt;p&gt;To monitor the status of active transfers, use&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;globus task list
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;or similarly you can use the web tool to verify transfers.&lt;/p&gt;
+&lt;h2 id=&#34;references&#34;&gt;References:&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Globus Data Transfer, Rivanna HPC &lt;a href=&#34;https://www.rc.virginia.edu/userinfo/globus/&#34;&gt;https://www.rc.virginia.edu/userinfo/globus/&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Cybertraining</title>
+      <link>/docs/tutorials/cybertraining/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/tutorials/cybertraining/</guid>
+      <description>
+        
+        
+        &lt;p&gt;A large number of tutorials and modules are avialable in our
+cybertraining educational activities.&lt;/p&gt;
+&lt;h2 id=&#34;cybertraining&#34;&gt;Cybertraining&lt;/h2&gt;
+&lt;p&gt;The main links to our cybertraining material are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cybertraining-dsc.github.io/docs/tutorial/&#34;&gt;Tutorials about cybertraining&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cybertraining-dsc.github.io/docs/modules/&#34;&gt;Educational Modules about cybertraining&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/cloudmesh-community/book/tree/main/chapters&#34;&gt;Educational chapters about cybertraining&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cloudmesh.github.io/cloudmesh-mpi/report-mpi.pdf&#34;&gt;MPI with Python&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/cloudmesh/cloudmesh-mpi&#34;&gt;MPI with Python repository&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Raspberry Pi Cluster</title>
+      <link>/docs/tutorials/raspberry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/tutorials/raspberry/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;p&gt;The main web page for this is at &lt;a href=&#34;https://piplanet.org&#34;&gt;https://piplanet.org&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;additional tutorials and resources are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1ZnmlOUl3RAZy6dfiuCgEFBaINqcjMoJ4A0t9hjkPo94/edit#slide=id.p&#34;&gt;https://docs.google.com/presentation/d/1ZnmlOUl3RAZy6dfiuCgEFBaINqcjMoJ4A0t9hjkPo94/edit#slide=id.p&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Create infomall.org</title>
+      <link>/docs/tutorials/websites/create-web-site/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/tutorials/websites/create-web-site/</guid>
+      <description>
+        
+        
+        &lt;p&gt;We assume you have hugo installed and cloudmesh-vpn is installed&lt;/p&gt;
+&lt;p&gt;You need to have python 3&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;computer&amp;gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;python -m venv ~/ENV3
+source ~/ENV3/bin/activate  # if windows in gitbash source ~/ENV3/Scripts/activate
+pip install cloudmesh-vpn -U
+cms help
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;creating-a-draft&#34;&gt;Creating a draft&lt;/h2&gt;
+&lt;p&gt;To create a new version of the code from the repository use&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;rivanna terminal 1&amp;gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git clone git@github.com:DSC-SPIDAL/infomall-org-uva.git
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;make serve
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To view the content say&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;rivanna terminal 2&amp;gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;make view
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;publish&#34;&gt;Publish&lt;/h2&gt;
+&lt;p&gt;The Web site is currently published by Gregor as follows. No other person must publish it.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;computer&amp;gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;/table&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cms vpn info &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# make sure vpn is set tu UVA&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cms vpn connect &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# only needed if vpn is off&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;make huge
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;make rsync
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cms vpn disconnect &lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;#optional to make sure vpn is off&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
       <title>Docs: Foundation models</title>
       <link>/docs/references/foundation-models/</link>
       <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
