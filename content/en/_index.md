@@ -4,12 +4,12 @@ title: Science FM Hub
 
 {{< blocks/cover title="Welcome to Science FM Hub" image_anchor="top" height="full" >}}
 <a class="btn btn-lg btn-primary me-3 mb-4" href="https://docs.google.com/document/d/1Wqw6MiAT0jJCOYes_cUiH5cxLPt05A0PZiH7NvAwRFI">
-  FM References <i class="fas fa-arrow-alt-circle-right ms-2"></i>
+  Foundation Model Summary Table<i class="fas fa-arrow-alt-circle-right ms-2"></i>
 </a>
 
 
 <a class="btn btn-lg btn-secondary me-3 mb-4" href="/docs/education/diversity-equity-inclusion/">
-  Diversity <i class="fas fa-arrow-alt-circle-right ms-2"></i>
+  Diversity, Equity and Inclusion Plan <i class="fas fa-arrow-alt-circle-right ms-2"></i>
 </a>
 
 
