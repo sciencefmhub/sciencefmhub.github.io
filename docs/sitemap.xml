@@ -11,8 +11,11 @@
     <loc>/docs/education/</loc>
     <lastmod>2023-11-22T08:30:34-05:00</lastmod>
   </url><url>
-    <loc>/docs/concepts/</loc>
+    <loc>/docs/examples/</loc>
     <lastmod>2023-11-22T08:30:34-05:00</lastmod>
+  </url><url>
+    <loc>/docs/concepts/</loc>
+    <lastmod>2023-11-22T15:09:14-05:00</lastmod>
   </url><url>
     <loc>/docs/references/</loc>
     <lastmod>2023-11-22T08:30:34-05:00</lastmod>
@@ -80,8 +83,14 @@
     <loc>/docs/tutorials/websites/create-web-site/</loc>
     <lastmod>2023-11-22T11:41:05-05:00</lastmod>
   </url><url>
-    <loc>/blog/2018/10/06/this-is-an-example-news-item./</loc>
+    <loc>/docs/education/diversity-equity-inclusion/</loc>
     <lastmod>2023-11-22T08:30:34-05:00</lastmod>
+  </url><url>
+    <loc>/blog/2023/11/23/no-release-yet./</loc>
+    <lastmod>2023-11-22T15:09:14-05:00</lastmod>
+  </url><url>
+    <loc>/blog/2018/10/06/this-is-an-example-news-item./</loc>
+    <lastmod>2023-11-22T15:09:14-05:00</lastmod>
   </url><url>
     <loc>/docs/references/foundation-models/</loc>
     <lastmod>2023-11-22T08:30:34-05:00</lastmod>

@@ -3,12 +3,16 @@ title: Science FM Hub
 ---
 
 {{< blocks/cover title="Welcome to Science FM Hub" image_anchor="top" height="full" >}}
-<a class="btn btn-lg btn-primary me-3 mb-4" href="/docs/">
-  Learn More <i class="fas fa-arrow-alt-circle-right ms-2"></i>
+<a class="btn btn-lg btn-primary me-3 mb-4" href="https://docs.google.com/document/d/1Wqw6MiAT0jJCOYes_cUiH5cxLPt05A0PZiH7NvAwRFI">
+  FM References <i class="fas fa-arrow-alt-circle-right ms-2"></i>
 </a>
-<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://github.com/google/docsy-example">
-  Download <i class="fab fa-github ms-2 "></i>
+
+
+<a class="btn btn-lg btn-secondary me-3 mb-4" href="http://localhost:1313/docs/education/diversity-equity-inclusion/">
+  Diversity <i class="fas fa-arrow-alt-circle-right ms-2"></i>
 </a>
+
+
 <p class="lead mt-5">Supporting Science with Making Foundation Models</p>
 {{< blocks/link-down color="info" >}}
 {{< /blocks/cover >}}
