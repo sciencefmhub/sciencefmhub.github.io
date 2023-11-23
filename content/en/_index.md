@@ -8,7 +8,7 @@ title: Science FM Hub
 </a>
 
 
-<a class="btn btn-lg btn-secondary me-3 mb-4" href="http://localhost:1313/docs/education/diversity-equity-inclusion/">
+<a class="btn btn-lg btn-secondary me-3 mb-4" href="/docs/education/diversity-equity-inclusion/">
   Diversity <i class="fas fa-arrow-alt-circle-right ms-2"></i>
 </a>
 
