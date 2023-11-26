@@ -9,7 +9,8 @@ resources:
   - src: "**.{png,jpg}"
     title: "Image #:counter"
     params:
-      byline: "Figure: Enhancing Medical Data with LLMs, Geoffrey C. Fox"
+      byline: "Figure: Details of a Cross-Stream Image-Text Foundation Model with Data preprocessing"
+
 ---
 
 ## Overview
