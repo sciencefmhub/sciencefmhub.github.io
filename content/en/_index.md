@@ -12,8 +12,14 @@ title: Science FM Hub
   Diversity, Equity and Inclusion Plan <i class="fas fa-arrow-alt-circle-right ms-2"></i>
 </a>
 
+<a class="btn btn-lg btn-secondary me-3 mb-4" href="blog/2023/11/26/large-language-models-for-medical-applications/">
+  Application: Medical Analysis <i class="fas fa-arrow-alt-circle-right ms-2"></i>
+</a>
 
-<p class="lead mt-5">Supporting Science with Making Foundation Models</p>
+
+
+
+<p class="lead mt-5">Supporting Science with Foundation Models</p>
 {{< blocks/link-down color="info" >}}
 {{< /blocks/cover >}}
 

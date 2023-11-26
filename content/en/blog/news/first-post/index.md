@@ -1,47 +1,28 @@
 ---
-date: 2018-10-06
-title: This is an example news item.
-linkTitle: Example news
+date: 2023-11-26
+title: Large Language Models for Medical Applications
+linkTitle: Medical LLM
 description: >
   This is an example news post
-author: Gregor von Laszewski
+author: Geoffrey C. Fox
 resources:
   - src: "**.{png,jpg}"
     title: "Image #:counter"
     params:
-      byline: "Photo: Riona MacNamara / CC-BY-CA"
+      byline: "Figure: Enhancing Medical Data with LLMs, Geoffrey C. Fox"
 ---
 
-**This is a typical blog post that includes images.**
+## Overview
 
-The front matter specifies the date of the blog post, its title, a short description that will be displayed on the blog landing page, and its author.
 
-## Including images
-
-Here's an image (`featured-sunset-get.png`) that includes a byline and a caption.
-
-{{< imgproc sunset Fill "600x300" >}}
-Fetch and scale an image in the upcoming Hugo 0.43.
+{{< imgproc sunset Fill "600x350" >}}
 {{< /imgproc >}}
 
-The front matter of this post specifies properties to be assigned to all image resources:
+Large Language Models can be used after pre training and fine tuning
+to augment the tools by medical staff to integrate specialized
+conclusions from these models.
 
-```
-resources:
-- src: "**.{png,jpg}"
-  title: "Image #:counter"
-  params:
-    byline: "Photo: Riona MacNamara / CC-BY-CA"
-```
-
-To include the image in a page, specify its details like this:
-
-```
-{{< imgproc sunset Fill "600x300" >}}
-Fetch and scale an image in the upcoming Hugo 0.43.
-{{< /imgproc >}}
-```
-
-The image will be rendered at the size and byline specified in the front matter.
+The output will help identifying medical issues that can then be
+further analyzed.
 
 
