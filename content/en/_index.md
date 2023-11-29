@@ -17,8 +17,6 @@ title: Science FM Hub
 </a>
 
 
-
-
 <p class="lead mt-5">Supporting Science with Foundation Models</p>
 {{< blocks/link-down color="info" >}}
 {{< /blocks/cover >}}
@@ -26,6 +24,20 @@ title: Science FM Hub
 
 {{% blocks/lead color="primary" %}}
 Science FM Hub provides a web site to coordinate activities around foundation models as used by science.
+
+{{% /blocks/lead %}}
+
+{{% blocks/lead color="secondary" %}}
+
+Talks
+
+<a class="btn btn-lg btn-primary me-3 mb-4" href="blog/2023/11/26/ai-for-science-foundation-models/">
+  AI for Science Foundation Models<i class="fas fa-arrow-alt-circle-right ms-2"></i>
+</a>
+
+<a class="btn btn-lg btn-primary me-3 mb-4" href="blog/2023/11/26/toward-an-open-science-foundation-model-for-weather-and-climate/">
+  Toward an open science foundation model for weather and climate <i class="fas fa-arrow-alt-circle-right ms-2"></i>
+</a>
 
 {{% /blocks/lead %}}
 

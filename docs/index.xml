@@ -14,6 +14,38 @@
     
     
     <item>
+      <title>Blog: AI for Science Foundation Models</title>
+      <link>/blog/2023/11/26/ai-for-science-foundation-models/</link>
+      <pubDate>Sun, 26 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2023/11/26/ai-for-science-foundation-models/</guid>
+      <description>
+        
+        
+        
+        <![CDATA[<img src="/blog/2023/11/26/ai-for-science-foundation-models/featured-ai4science_hud4fcac63bd94ba6ce7538a0e69253678_621986_640x0_resize_catmullrom_3.png" width="640" height="360"/>]]>
+        
+        &lt;h2 id=&#34;ai-for-science-foundation-models&#34;&gt;AI for Science Foundation Models&lt;/h2&gt;
+&lt;figure class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 610px&#34;&gt;
+&lt;img class=&#34;card-img-top&#34; src=&#34;/blog/2023/11/26/ai-for-science-foundation-models/featured-ai4science_hud4fcac63bd94ba6ce7538a0e69253678_621986_600x350_fill_catmullrom_smart1_3.png&#34; width=&#34;600&#34; height=&#34;350&#34;&gt;
+&lt;figcaption class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+&lt;p class=&#34;card-text&#34;&gt;
+
+
+&lt;small class=&#34;text-muted&#34;&gt;&lt;br/&gt;Figure: Typical Process for AI four Science&lt;/small&gt;
+&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;November 25 2023 updated from September 15, 2023&lt;/p&gt;
+&lt;p&gt;University of Virginia&lt;/p&gt;
+&lt;p&gt;Geoffrey Fox, Biocomplexity Institute and Computer Science Department&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://docs.google.com/presentation/d/1JrRBwi8mnx13yw5buq_VeiPmczdc6NSNAx9qAaVTG3I/&#34;&gt;Link to presentation&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Blog: Large Language Models for Medical Applications</title>
       <link>/blog/2023/11/26/large-language-models-for-medical-applications/</link>
       <pubDate>Sun, 26 Nov 2023 00:00:00 +0000</pubDate>
@@ -42,6 +74,39 @@ to augment the tools by medical staff to integrate specialized
 conclusions from these models.&lt;/p&gt;
 &lt;p&gt;The output will help identifying medical issues that can then be
 further analyzed.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Blog: Toward an open science foundation model for weather and climate</title>
+      <link>/blog/2023/11/26/toward-an-open-science-foundation-model-for-weather-and-climate/</link>
+      <pubDate>Sun, 26 Nov 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2023/11/26/toward-an-open-science-foundation-model-for-weather-and-climate/</guid>
+      <description>
+        
+        
+        
+        <![CDATA[<img src="/blog/2023/11/26/toward-an-open-science-foundation-model-for-weather-and-climate/featured-sunset-get_hu2250915c1aae1ee6d268ee27ceb255ee_523242_640x0_resize_catmullrom_3.png" width="640" height="374"/>]]>
+        
+        &lt;h2 id=&#34;toward-an-open-science-foundation-model-for-weather-and-climate&#34;&gt;Toward an open science foundation model for weather and climate&lt;/h2&gt;
+&lt;figure class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 810px&#34;&gt;
+&lt;img class=&#34;card-img-top&#34; src=&#34;/blog/2023/11/26/toward-an-open-science-foundation-model-for-weather-and-climate/featured-timeline_hu1dedd947bd1ed1be61aaa789e9f40633_508420_800x350_fill_catmullrom_smart1_3.png&#34; width=&#34;800&#34; height=&#34;350&#34;&gt;
+&lt;figcaption class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+&lt;p class=&#34;card-text&#34;&gt;
+
+
+&lt;small class=&#34;text-muted&#34;&gt;&lt;br/&gt;Figure: Evolution of climate models&lt;/small&gt;
+&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://drive.google.com/file/d/1P6eJDbzVxknKiDhCKqaMIbEa9deOxtW1/view&#34;&gt;Recording of the talk&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Valentine &amp;ldquo;Val&amp;rdquo; Anantharaj, Oak Ridge National Laboratory&lt;/p&gt;
+&lt;p&gt;Reliable forecasting of weather and assessment of risks at any location or region of the world requires the coordinated monitoring of weather and acquisition of data. A variety of data are routinely collected from diverse observing systems, including ground-based instruments and satellite platforms. The data are then integrated via numerical weather prediction systems using sophisticated data assimilation techniques on supercomputers to produce timely predictions and associated uncertainties that are used to make routine probabilistic forecasts and issue any associated warnings.&lt;/p&gt;
+&lt;p&gt;Recently, data-driven machine learning (ML) models have demonstrated their potential to augment the deterministic forecasts of NWP systems. A few of these ML models can also be broadly characterized as “foundation models” that have been developed based on AI Vision Transformer (ViT) architecture. The foundation models also offer capabilities to integrate heterogeneous data by fine-tuning a pre-trained model. This approach is very promising for weather and climate research and applications. Data from multiple modalities and resolutions can be employed for a range of new capabilities.&lt;/p&gt;
+&lt;p&gt;The speaker will also provide an overview of a recent collaborative initiative, led by NASA, IBM and ORNL, to develop an open science foundation model for weather and climate. The presentation will also outline and discuss the emerging opportunities for using foundation models leveraging the value chain of climate data from simulations and observations of the earth system while leveraging DOE exascale systems such as Frontier, and the Advanced Computing Environment (ACE) Testbed at the OLCF.&lt;/p&gt;
 
       </description>
     </item>
