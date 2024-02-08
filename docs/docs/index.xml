@@ -1365,11 +1365,11 @@ If you cannot find the &lt;code&gt;Tab&lt;/code&gt; button, then click
 on &lt;code&gt;View&lt;/code&gt; in the top-right, go to &lt;code&gt;Appearance&lt;/code&gt;,
 and make sure &lt;code&gt;Status Bar&lt;/code&gt; is checked.&lt;/p&gt;
 &lt;p&gt;After clicking the &lt;code&gt;Tab&lt;/code&gt; button in the
-bottom-right, click on &lt;code&gt;Configure Indents for Makefile...&lt;/code&gt; Tab size should be 4.&lt;/p&gt;
+bottom-right, click on &lt;code&gt;Configure Indents for Makefile...&lt;/code&gt; Tab size should be 4.&lt;/p&gt;
 &lt;p&gt;If PyCharm fails to render your Makefile correctly,
 right-click on the Makefile in your open files tabs
 and click &lt;code&gt;Override File Type&lt;/code&gt;. If you cannot find
-&lt;code&gt;Makefile&lt;/code&gt; in the list, you must install the &lt;code&gt;Makefile Language plugin&lt;/code&gt; for PyCharm.&lt;/p&gt;
+&lt;code&gt;Makefile&lt;/code&gt; in the list, you must install the &lt;code&gt;Makefile Language plugin&lt;/code&gt; for PyCharm.&lt;/p&gt;
 &lt;h2 id=&#34;preparing-for-virtualization&#34;&gt;Preparing for Virtualization&lt;/h2&gt;
 &lt;h3 id=&#34;docker&#34;&gt;Docker&lt;/h3&gt;
 &lt;p&gt;To enable virtualization for Docker on Windows machines, some
@@ -1395,7 +1395,7 @@ For Docker, &lt;code&gt;Hyper-V&lt;/code&gt; and &lt;code&gt;Containers&lt;/code
 &lt;p&gt;WSL is a Linux virtual image designed for Windows. WSL 2 is typically
 used as opposed to WSL 1. To install, type this into administrative PowerShell:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PS&amp;gt; wsl --install
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To install a particular distribution, use &lt;code&gt;wsl --install -d &amp;lt;DistroName&amp;gt;&lt;/code&gt; instead. The available distributions can be found with&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To install a particular distribution, use &lt;code&gt;wsl --install -d &amp;lt;DistroName&amp;gt;&lt;/code&gt; instead. The available distributions can be found with&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;PS&amp;gt; wsl --list --online
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;After WSL is installed, it can be accessed by typing &lt;code&gt;wsl&lt;/code&gt; in
 Powershell. More documentation can be found in the &lt;a href=&#34;https://docs.microsoft.com/en-us/windows/wsl/install&#34;&gt;Microsoft
@@ -1865,6 +1865,59 @@ The flag &lt;code&gt;--drive-shared-with-me&lt;/code&gt; restricts the scope to
 only shared files.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ rclone copy --drive-shared-with-me gdrive:Colab&lt;span style=&#34;color:#4e9a06&#34;&gt;\ &lt;/span&gt;Datasets/EarthquakeDec2020  /scratch/&lt;span style=&#34;color:#000&#34;&gt;$USER&lt;/span&gt;/EarthquakeDec2020 -P
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Using Cloudbank</title>
+      <link>/docs/tutorials/cloudbank/account/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/tutorials/cloudbank/account/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;WARNING&lt;/strong&gt;: ANY USE OF CLOUDBANK MUST INCLUDE THAT YOU HAVE A DEEP
+UNDEARSTANDING HOW CHARGES ARE DONE. WASTFUL USE OF RESOURCES WHICH
+COST REAL $ WILL RESULT IN AN IMMEDIATE TERMINATION OF YOUR
+ACCOUNT. Any cost above $100 over the semester must be preaproved and
+accompanied with a detailed cost break down.&lt;/p&gt;
+&lt;h2 id=&#34;using-cloudbank&#34;&gt;Using Cloudbank&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Students need to create an account on &lt;a href=&#34;https://cloudbank.org&#34;&gt;https://cloudbank.org&lt;/a&gt; with
+their university e-mail. Please follow the instructions&lt;/li&gt;
+&lt;li&gt;If multiple studnets need an account all students that need a
+cloudaccount must have completed step 1 before we proceed.
+If that deadline set by your teacher is missed, you will have to
+likely wait.&lt;/li&gt;
+&lt;li&gt;Once all students have applied we will do the next step.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;activating-your-cloudbank-account-with-our-project&#34;&gt;Activating your cloudbank account with our project&lt;/h2&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Gregor will activate your cloudbank account in the cloudbank
+project. You do not have to do anything but wait. Gregor will
+notify Bud.&lt;/li&gt;
+&lt;li&gt;Bud will add you to AWS via cloudbank. He will try to limit your
+spending amount to $100 initially. You do not have to do
+anything but wait.&lt;/li&gt;
+&lt;li&gt;Bud will notify you and Gregor once this is done.&lt;/li&gt;
+&lt;li&gt;This process is done n best effort and as we have never done it it
+may take some time to complete. We anticipate a week.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;what-to-do-while-you-wait&#34;&gt;What to do while you wait&lt;/h2&gt;
+&lt;ol start=&#34;8&#34;&gt;
+&lt;li&gt;Find out which services you need on AWS&lt;/li&gt;
+&lt;li&gt;Find out what they cost as we have to pay for it in $ this needs to
+be estimated precisely&lt;/li&gt;
+&lt;li&gt;If it exceeds $100 you need to figure out why and estimate total
+cost over the entire semester as we do not have unlimited funds.&lt;/li&gt;
+&lt;li&gt;Make sure you understand running costs and startup costs for a
+service. Note: starting a service every second will cost a lot!&lt;/li&gt;
+&lt;li&gt;learn that you must not palce keys and certs in your
+gitrepos. Figure out where to place them&lt;/li&gt;
+&lt;li&gt;If you neeed ssh and use windows use gitbash.&lt;/li&gt;
+&lt;/ol&gt;
+
       </description>
     </item>
     

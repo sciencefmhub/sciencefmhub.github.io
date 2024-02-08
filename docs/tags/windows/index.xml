@@ -121,11 +121,11 @@ If you cannot find the &lt;code&gt;Tab&lt;/code&gt; button, then click
 on &lt;code&gt;View&lt;/code&gt; in the top-right, go to &lt;code&gt;Appearance&lt;/code&gt;,
 and make sure &lt;code&gt;Status Bar&lt;/code&gt; is checked.&lt;/p&gt;
 &lt;p&gt;After clicking the &lt;code&gt;Tab&lt;/code&gt; button in the
-bottom-right, click on &lt;code&gt;Configure Indents for Makefile...&lt;/code&gt; Tab size should be 4.&lt;/p&gt;
+bottom-right, click on &lt;code&gt;Configure Indents for Makefile...&lt;/code&gt; Tab size should be 4.&lt;/p&gt;
 &lt;p&gt;If PyCharm fails to render your Makefile correctly,
 right-click on the Makefile in your open files tabs
 and click &lt;code&gt;Override File Type&lt;/code&gt;. If you cannot find
-&lt;code&gt;Makefile&lt;/code&gt; in the list, you must install the &lt;code&gt;Makefile Language plugin&lt;/code&gt; for PyCharm.&lt;/p&gt;
+&lt;code&gt;Makefile&lt;/code&gt; in the list, you must install the &lt;code&gt;Makefile Language plugin&lt;/code&gt; for PyCharm.&lt;/p&gt;
 &lt;h2 id=&#34;preparing-for-virtualization&#34;&gt;Preparing for Virtualization&lt;/h2&gt;
 &lt;h3 id=&#34;docker&#34;&gt;Docker&lt;/h3&gt;
 &lt;p&gt;To enable virtualization for Docker on Windows machines, some
@@ -151,7 +151,7 @@ For Docker, &lt;code&gt;Hyper-V&lt;/code&gt; and &lt;code&gt;Containers&lt;/code
 &lt;p&gt;WSL is a Linux virtual image designed for Windows. WSL 2 is typically
 used as opposed to WSL 1. To install, type this into administrative PowerShell:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PS&amp;gt; wsl --install
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To install a particular distribution, use &lt;code&gt;wsl --install -d &amp;lt;DistroName&amp;gt;&lt;/code&gt; instead. The available distributions can be found with&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;To install a particular distribution, use &lt;code&gt;wsl --install -d &amp;lt;DistroName&amp;gt;&lt;/code&gt; instead. The available distributions can be found with&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;PS&amp;gt; wsl --list --online
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;After WSL is installed, it can be accessed by typing &lt;code&gt;wsl&lt;/code&gt; in
 Powershell. More documentation can be found in the &lt;a href=&#34;https://docs.microsoft.com/en-us/windows/wsl/install&#34;&gt;Microsoft

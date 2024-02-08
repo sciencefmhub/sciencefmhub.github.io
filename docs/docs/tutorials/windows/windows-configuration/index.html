@@ -123,6 +123,13 @@
   <a href="/docs/tutorials/getting_started/" title="Getting Started with the bii_dsc_community" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docstutorialsgetting_started"><span class="">Getting Started</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docstutorialschecklist-li">
   <a href="/docs/tutorials/checklist/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docstutorialschecklist"><span class="">Checklist</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docstutorialscloudbank-li">
+  <a href="/docs/tutorials/cloudbank/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docstutorialscloudbank"><i class="fa-solid fa-caret-right"></i><span class="">Cloudbank</span></a>
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docstutorialscloudbankaccount-li">
+  <a href="/docs/tutorials/cloudbank/account/" class="align-left ps-0 td-sidebar-link td-sidebar-link__page" id="m-docstutorialscloudbankaccount"><span class="">Using Cloudbank</span></a>
+</li>
+  </ul>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docstutorialsfile-transfer-li">
   <a href="/docs/tutorials/file-transfer/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section" id="m-docstutorialsfile-transfer"><i class="fa-solid fa-caret-right"></i><span class="">File Transfer</span></a>
   <ul class="ul-3 foldable">
@@ -216,8 +223,10 @@
             <div class="taxonomy taxonomy-terms-cloud taxo-tags">
       <h5 class="taxonomy-title">Tag Cloud</h5>
       <ul class="taxonomy-terms">
+        <li><a class="taxonomy-term" href="/tags/account/" data-taxonomy-term="account"><span class="taxonomy-label">account</span><span class="taxonomy-count">1</span></a></li>
         <li><a class="taxonomy-term" href="/tags/bash/" data-taxonomy-term="bash"><span class="taxonomy-label">bash</span><span class="taxonomy-count">2</span></a></li>
         <li><a class="taxonomy-term" href="/tags/checklist/" data-taxonomy-term="checklist"><span class="taxonomy-label">checklist</span><span class="taxonomy-count">1</span></a></li>
+        <li><a class="taxonomy-term" href="/tags/cloudbank/" data-taxonomy-term="cloudbank"><span class="taxonomy-label">cloudbank</span><span class="taxonomy-count">1</span></a></li>
         <li><a class="taxonomy-term" href="/tags/docker/" data-taxonomy-term="docker"><span class="taxonomy-label">docker</span><span class="taxonomy-count">1</span></a></li>
         <li><a class="taxonomy-term" href="/tags/filetransfer/" data-taxonomy-term="filetransfer"><span class="taxonomy-label">filetransfer</span><span class="taxonomy-count">2</span></a></li>
         <li><a class="taxonomy-term" href="/tags/git/" data-taxonomy-term="git"><span class="taxonomy-label">git</span><span class="taxonomy-count">1</span></a></li>
@@ -358,11 +367,11 @@ If you cannot find the <code>Tab</code> button, then click
 on <code>View</code> in the top-right, go to <code>Appearance</code>,
 and make sure <code>Status Bar</code> is checked.</p>
 <p>After clicking the <code>Tab</code> button in the
-bottom-right, click on <code>Configure Indents for Makefile...</code> Tab size should be 4.</p>
+bottom-right, click on <code>Configure Indents for Makefile...</code> Tab size should be 4.</p>
 <p>If PyCharm fails to render your Makefile correctly,
 right-click on the Makefile in your open files tabs
 and click <code>Override File Type</code>. If you cannot find
-<code>Makefile</code> in the list, you must install the <code>Makefile Language plugin</code> for PyCharm.</p>
+<code>Makefile</code> in the list, you must install the <code>Makefile Language plugin</code> for PyCharm.</p>
 <h2 id="preparing-for-virtualization">Preparing for Virtualization</h2>
 <h3 id="docker">Docker</h3>
 <p>To enable virtualization for Docker on Windows machines, some
@@ -388,7 +397,7 @@ For Docker, <code>Hyper-V</code> and <code>Containers</code> must be enabled.</p
 <p>WSL is a Linux virtual image designed for Windows. WSL 2 is typically
 used as opposed to WSL 1. To install, type this into administrative PowerShell:</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>PS&gt; wsl --install
-</span></span></code></pre></div><p>To install a particular distribution, use <code>wsl --install -d &lt;DistroName&gt;</code> instead. The available distributions can be found with</p>
+</span></span></code></pre></div><p>To install a particular distribution, use <code>wsl --install -d &lt;DistroName&gt;</code> instead. The available distributions can be found with</p>
 <pre tabindex="0"><code>PS&gt; wsl --list --online
 </code></pre><p>After WSL is installed, it can be accessed by typing <code>wsl</code> in
 Powershell. More documentation can be found in the <a href="https://docs.microsoft.com/en-us/windows/wsl/install">Microsoft
@@ -447,7 +456,7 @@ directories to the Desktop in WSL, use this command:</p>
         
       </div>
       <div class="td-footer__copyright-etc col-12 col-sm-4 text-center py-2 order-sm-2">
-        <span>&copy; 2023 The Science FM Hub Community All Rights Reserved</span>
+        <span>&copy; 2024 The Science FM Hub Community All Rights Reserved</span>
         <span class="ms-1"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy</a></span>
         
       </div>

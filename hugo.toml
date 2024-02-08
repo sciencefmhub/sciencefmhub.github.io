@@ -1,6 +1,7 @@
 baseURL = "/"
 title = "Science FM Hub"
-publishDir = "./public"
+publishDir = "./docs"
+#publishDir = "./public"
 
 # Language settings
 contentDir = "content/en"
