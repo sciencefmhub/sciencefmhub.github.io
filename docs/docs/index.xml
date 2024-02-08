@@ -1878,30 +1878,27 @@ only shared files.&lt;/p&gt;
         
         
         &lt;p&gt;&lt;strong&gt;WARNING&lt;/strong&gt;: ANY USE OF CLOUDBANK MUST INCLUDE THAT YOU HAVE A DEEP
-UNDEARSTANDING HOW CHARGES ARE DONE. WASTFUL USE OF RESOURCES WHICH
+UNDERSTANDING HOW CHARGES ARE DONE. WASTEFUL USE OF RESOURCES WHICH
 COST REAL $ WILL RESULT IN AN IMMEDIATE TERMINATION OF YOUR
-ACCOUNT. Any cost above $100 over the semester must be preaproved and
-accompanied with a detailed cost break down.&lt;/p&gt;
+ACCOUNT. Any cost above $100 over the semester must be preapproved and
+accompanied by a detailed cost breakdown.&lt;/p&gt;
 &lt;h2 id=&#34;using-cloudbank&#34;&gt;Using Cloudbank&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Students need to create an account on &lt;a href=&#34;https://cloudbank.org&#34;&gt;https://cloudbank.org&lt;/a&gt; with
-their university e-mail. Please follow the instructions&lt;/li&gt;
-&lt;li&gt;If multiple studnets need an account all students that need a
-cloudaccount must have completed step 1 before we proceed.
-If that deadline set by your teacher is missed, you will have to
-likely wait.&lt;/li&gt;
-&lt;li&gt;Once all students have applied we will do the next step.&lt;/li&gt;
+their university e-mail. Please follow the instructions.&lt;/li&gt;
+&lt;li&gt;If multiple students need an account all students must have completed step 1 before we proceed.&lt;/li&gt;
+&lt;li&gt;All names and emails as entered in Cloudbank must be forwarded to Gregor and Bud.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;activating-your-cloudbank-account-with-our-project&#34;&gt;Activating your cloudbank account with our project&lt;/h2&gt;
+&lt;h2 id=&#34;activating-your-cloudbank-account-with-our-project&#34;&gt;Activating your Cloudbank account with our project&lt;/h2&gt;
 &lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;Gregor will activate your cloudbank account in the cloudbank
+&lt;li&gt;Gregor will activate your Cloudbank account in the Cloudbank
 project. You do not have to do anything but wait. Gregor will
 notify Bud.&lt;/li&gt;
-&lt;li&gt;Bud will add you to AWS via cloudbank. He will try to limit your
+&lt;li&gt;Bud will add you to AWS via Cloudbank. He will try to limit your
 spending amount to $100 initially. You do not have to do
 anything but wait.&lt;/li&gt;
 &lt;li&gt;Bud will notify you and Gregor once this is done.&lt;/li&gt;
-&lt;li&gt;This process is done n best effort and as we have never done it it
+&lt;li&gt;This process is done on best effort and as we have never done it it
 may take some time to complete. We anticipate a week.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;what-to-do-while-you-wait&#34;&gt;What to do while you wait&lt;/h2&gt;
@@ -1909,13 +1906,22 @@ may take some time to complete. We anticipate a week.&lt;/li&gt;
 &lt;li&gt;Find out which services you need on AWS&lt;/li&gt;
 &lt;li&gt;Find out what they cost as we have to pay for it in $ this needs to
 be estimated precisely&lt;/li&gt;
-&lt;li&gt;If it exceeds $100 you need to figure out why and estimate total
+&lt;li&gt;If it exceeds $100 you need to figure out why and estimate the total
 cost over the entire semester as we do not have unlimited funds.&lt;/li&gt;
 &lt;li&gt;Make sure you understand running costs and startup costs for a
 service. Note: starting a service every second will cost a lot!&lt;/li&gt;
-&lt;li&gt;learn that you must not palce keys and certs in your
+&lt;li&gt;Learn that you must not place keys and certs in your
 gitrepos. Figure out where to place them&lt;/li&gt;
-&lt;li&gt;If you neeed ssh and use windows use gitbash.&lt;/li&gt;
+&lt;li&gt;If you need ssh and use Windows use gitbash.&lt;/li&gt;
+&lt;li&gt;Improve this tutorial and make pull pull request with your improvement.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;pitfalls&#34;&gt;Pitfalls&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Ignore reding the documentation&lt;/li&gt;
+&lt;li&gt;Not understanding ssh kegen, ssh agent, ssh-add&lt;/li&gt;
+&lt;li&gt;On Windows: Juts using putty and not understanding gitbash&lt;/li&gt;
+&lt;li&gt;Placeing any key in your project code other then reading them from a secure filesystem.&lt;/li&gt;
+&lt;li&gt;Not understanding what 1-4 is about.&lt;/li&gt;
 &lt;/ol&gt;
 
       </description>
