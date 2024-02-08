@@ -9,19 +9,20 @@ tags:
 - account
 ---
 
-**WARNING**: ANY USE OF CLOUDBANK MUST INCLUDE THAT YOU HAVE A DEEP
-UNDERSTANDING HOW CHARGES ARE DONE. WASTEFUL USE OF RESOURCES WHICH
-COST REAL $ WILL RESULT IN AN IMMEDIATE TERMINATION OF YOUR
-ACCOUNT. Any cost above $100 over the semester must be preapproved and
-accompanied by a detailed cost breakdown. 
+
 
 
 ## Using Cloudbank
 
-1. Students need to create an account on https://cloudbank.org with
+1. **WARNING**: ANY USE OF CLOUDBANK MUST INCLUDE THAT YOU HAVE A DEEP
+   UNDERSTANDING HOW CHARGES ARE DONE. WASTEFUL USE OF RESOURCES WHICH
+   COST REAL $ WILL RESULT IN AN IMMEDIATE TERMINATION OF YOUR
+   ACCOUNT. Any cost above $100 over the semester must be preapproved
+   and accompanied by a detailed cost breakdown.
+2. Students need to create an account on https://cloudbank.org with
    their university e-mail. Please follow the instructions.
-2. If multiple students need an account all students must have completed step 1 before we proceed.
-3. All names and emails as entered in Cloudbank must be forwarded to Gregor and Bud.
+3. If multiple students need an account all students must have completed step 1 before we proceed.
+4. All names and emails as entered in Cloudbank must be forwarded to Gregor and Bud.
 
 ## Activating your Cloudbank account with our project
 
