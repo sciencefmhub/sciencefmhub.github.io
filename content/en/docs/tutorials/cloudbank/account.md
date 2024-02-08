@@ -68,3 +68,13 @@ tags:
 4. MPI is available on Rivanna
 5. TF and pytorch is available on Rivanna
 6. Jupyter notebooks can be run on Rivanna or Google Collab
+
+## Honor Policy
+
+1. The project you do must be part of an approved project.
+2. You must not use cloudbank and its clouds for personal projects.
+3. You must not use cloudbank and its clouds for bitcoin mining.
+4. In case publications and reports be written based on usage form our
+   cloudbank account, you must include it in an Acknowledgement
+   statement and notify us with a copy of the report. Please note that
+   the report may be made publically available.
