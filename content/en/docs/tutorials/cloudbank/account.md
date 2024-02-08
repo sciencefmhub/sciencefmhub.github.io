@@ -58,6 +58,13 @@ tags:
 4. Placeing any key in your project code other then reading them from a secure filesystem.
 5. Not understanding what 1-4 is about.
 
+## Alternatives
 
-
-
+1. Try to use alternatives whenever you can
+2. Spark is available on [Rivanna](https://www.rc.virginia.edu/userinfo/rivanna/software/spark/)
+3. Hadoop development can be done on Windows, Mac, Linux (Search in
+   google how to set it up). Development is often easier on your
+   laptop. Once you complete it use cloudbank.
+4. MPI is available on Rivanna
+5. TF and pytorch is available on Rivanna
+6. Jupyter notebooks can be run on Rivanna or Google Collab
