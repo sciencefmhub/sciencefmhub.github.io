@@ -52,7 +52,7 @@ tags:
 
 ## Pitfalls
 
-1. Ignore reding the documentation
+1. Ignore reading the documentation
 2. Not understanding ssh kegen, ssh agent, ssh-add
 3. On Windows: Juts using putty and not understanding gitbash
 4. Placeing any key in your project code other then reading them from a secure filesystem.
