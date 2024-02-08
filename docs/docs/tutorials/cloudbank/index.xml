@@ -63,11 +63,22 @@ gitrepos. Figure out where to place them&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;pitfalls&#34;&gt;Pitfalls&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;Ignore reding the documentation&lt;/li&gt;
+&lt;li&gt;Ignore reading the documentation&lt;/li&gt;
 &lt;li&gt;Not understanding ssh kegen, ssh agent, ssh-add&lt;/li&gt;
 &lt;li&gt;On Windows: Juts using putty and not understanding gitbash&lt;/li&gt;
 &lt;li&gt;Placeing any key in your project code other then reading them from a secure filesystem.&lt;/li&gt;
 &lt;li&gt;Not understanding what 1-4 is about.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;alternatives&#34;&gt;Alternatives&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Try to use alternatives whenever you can&lt;/li&gt;
+&lt;li&gt;Spark is available on &lt;a href=&#34;https://www.rc.virginia.edu/userinfo/rivanna/software/spark/&#34;&gt;Rivanna&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Hadoop development can be done on Windows, Mac, Linux (Search in
+google how to set it up). Development is often easier on your
+laptop. Once you complete it use cloudbank.&lt;/li&gt;
+&lt;li&gt;MPI is available on Rivanna&lt;/li&gt;
+&lt;li&gt;TF and pytorch is available on Rivanna&lt;/li&gt;
+&lt;li&gt;Jupyter notebooks can be run on Rivanna or Google Collab&lt;/li&gt;
 &lt;/ol&gt;
 
       </description>
