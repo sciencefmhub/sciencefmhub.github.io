@@ -296,17 +296,17 @@ ServerAliveInterval 60
 Host rivanna
      User abc2de
      HostName rivanna.hpc.virginia.edu
-     IdentityFile ~/.ssh/id_rsa.pub
+     IdentityFile ~/.ssh/id_rsa
      
 Host b1
      User abc2de
      HostName biihead1.bii.virginia.edu
-     IdentityFile ~/.ssh/id_rsa.pub
+     IdentityFile ~/.ssh/id_rsa
      
 Host b2
      User abc2de
      HostName biihead2.bii.virginia.edu
-     IdentityFile ~/.ssh/id_rsa.pub
+     IdentityFile ~/.ssh/id_rsa
 ```
 
 Adding it allows you to just ssh to the machines with 
